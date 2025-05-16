@@ -1,0 +1,109 @@
+.dr1013insuranceprivate {
+	background: #e3f2fd;
+}
+
+/* Private Insurance Section */
+.dr1013insuranceprivate .private-insurances {
+	padding: 60px 20px;
+	background: #1e88e5;
+	color: white;
+	text-align: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.dr1013insuranceprivate .private-insurances h2 {
+	font-size: 2.8rem;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dr1013insuranceprivate .private-insurances p {
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+	color: #e3f2fd;
+}
+
+.dr1013insuranceprivate .insurance-logos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+/* Individual Logo Card */
+.dr1013insuranceprivate .insurance-logo {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+	padding: 30px;
+	width: 220px;
+	text-align: center;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dr1013insuranceprivate .insurance-logo:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Image */
+.dr1013insuranceprivate .insurance-logo img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+	display: block;
+	margin: auto;
+}
+
+/* Optional Logo Description */
+.dr1013insuranceprivate .insurance-logo h4 {
+	font-size: 1.5rem;
+	color: #004c99;
+	margin-top: 15px;
+}
+
+.dr1013insuranceprivate .insurance-logo p {
+	font-size: 1rem;
+	color: white;
+	margin-top: 10px;
+}
+
+/* Responsive Tweaks */
+@media ( max-width : 768px) {
+	.dr1013insuranceprivate .private-insurances {
+		padding: 40px 20px;
+	}
+	.dr1013insuranceprivate .private-insurances h2 {
+		font-size: 2.2rem;
+	}
+	.dr1013insuranceprivate .insurance-logo {
+		width: 85%;
+		padding: 25px;
+	}
+	.dr1013insuranceprivate .insurance-logo h4 {
+		font-size: 1.3rem;
+	}
+	.dr1013insuranceprivate .insurance-logo p {
+		font-size: 0.9rem;
+	}
+}
+
+@media ( max-width : 480px) {
+	.dr1013insuranceprivate .private-insurances h2 {
+		font-size: 1.8rem;
+	}
+	.dr1013insuranceprivate .insurance-logo {
+		width: 95%;
+		padding: 20px;
+	}
+	.dr1013insuranceprivate .insurance-logo h4 {
+		font-size: 1.1rem;
+	}
+	.dr1013insuranceprivate .insurance-logo p {
+		font-size: 0.85rem;
+	}
+}

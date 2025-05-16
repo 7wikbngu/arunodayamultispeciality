@@ -1,0 +1,34 @@
+.dr1013loader {
+  /* Optional styling for loader container */
+}
+
+.dr1013loader #loader {
+  border: 12px solid #f0f8ff; /* Light blue backdrop */
+  border-radius: 50%;
+  border-top: 12px solid #0077b6; /* Soft hospital blue */
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  background: radial-gradient(circle, rgba(240, 248, 255, 0.4), rgba(0, 119, 182, 0.2)); /* Subtle gradient for calming effect */
+  box-shadow: 0 0 12px rgba(0, 119, 182, 0.3); /* Light blue glow */
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dr1013loader .center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6); /* Soft white overlay */
+  backdrop-filter: blur(5px); /* Blur effect for a modern touch */
+}

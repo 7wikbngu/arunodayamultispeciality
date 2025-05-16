@@ -1,0 +1,85 @@
+.dr1013speciality {
+	padding: 60px 0;
+	background-color: #f4f8fd;
+}
+
+.dr1013speciality .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.dr1013speciality h2 {
+	text-align: center;
+	font-size: 2.8rem;
+	margin-bottom: 40px;
+	color: #2083a1;
+	font-weight: 600;
+}
+
+.dr1013speciality .specialities-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.dr1013speciality .speciality-card {
+	background: #ffffff;
+	padding: 35px;
+	text-align: center;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s
+		ease;
+    background-color: #f8f9fc;
+}
+
+.dr1013speciality .speciality-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	background-color: #e3f2fd;
+}
+
+.dr1013speciality .speciality-card i {
+	font-size: 3.5rem;
+	color: #2083a1;
+	margin-bottom: 25px;
+	transition: color 0.3s ease;
+}
+
+.dr1013speciality .speciality-card:hover i {
+	color: #fcb83a;
+}
+
+.dr1013speciality .speciality-card h3 {
+	font-size: 1.8rem;
+	color: #2083a1;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+.dr1013speciality .speciality-card:hover h3 {
+	color: #fcb83a;
+}
+
+.dr1013speciality .speciality-card p {
+	font-size: 1.1rem;
+	color: #777;
+	transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.dr1013speciality .speciality-card:hover {
+	transform: scale(1.05);
+	transition: all 0.3s ease;
+}
+
+@media ( max-width : 768px) {
+	.dr1013speciality .speciality-card i {
+		font-size: 2.8rem;
+	}
+	.dr1013speciality .speciality-card h3 {
+		font-size: 1.6rem;
+	}
+}

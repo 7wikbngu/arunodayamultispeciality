@@ -1,0 +1,86 @@
+.dr1013testimonial {
+	font-family: 'Segoe UI', sans-serif;
+	margin: 0;
+	background: #f0f4f8;
+	color: #333;
+}
+
+.dr1013testimonial .testimonials-inline {
+	padding: 60px 20px;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.dr1013testimonial .testimonials-inline h2 {
+	text-align: center;
+	font-size: 2.6em;
+	color: #004c99;
+	margin-bottom: 10px;
+}
+
+.dr1013testimonial .testimonials-inline p.summary {
+	text-align: center;
+	color: #555;
+	margin-bottom: 50px;
+	font-size: 1.1em;
+}
+
+.dr1013testimonial .testimonial-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.dr1013testimonial .testimonial-card {
+	background: linear-gradient(135deg, #ffffff, #f9f9ff);
+	border-left: 6px solid #00bcd4;
+	border-radius: 15px;
+	padding: 25px;
+	position: relative;
+	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+	transition: transform 0.3s;
+}
+
+.dr1013testimonial .testimonial-card:hover {
+	transform: translateY(-6px);
+}
+
+.dr1013testimonial .testimonial-card h3 {
+	margin: 0 0 8px;
+	color: #00796b;
+}
+
+.dr1013testimonial .testimonial-card .content {
+	font-style: italic;
+	color: #444;
+	margin-bottom: 15px;
+}
+
+.dr1013testimonial .profile {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.dr1013testimonial .profile img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-right: 15px;
+	border: 2px solid #00bcd4;
+}
+
+.dr1013testimonial .name-role {
+	line-height: 1.2;
+}
+
+.dr1013testimonial .name-role strong {
+	display: block;
+	color: #004c99;
+}
+
+.dr1013testimonial .stars {
+	color: #ffc107;
+	margin-top: 5px;
+}

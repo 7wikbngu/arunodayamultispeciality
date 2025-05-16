@@ -1,0 +1,74 @@
+.dr1013facility {
+	
+}
+
+
+.dr1013facility .facility-section {
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #00c6ff, #0072ff);
+	color: white;
+	text-align: center;
+}
+
+.dr1013facility .facility-section h2 {
+	font-size: 2.8rem;
+	margin-bottom: 12px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dr1013facility .facility-section p.subtitle {
+	font-size: 1.1rem;
+	color: #e3f2fd;
+	margin-bottom: 40px;
+}
+
+.dr1013facility .facility-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 25px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.dr1013facility .facility-card {
+	background: linear-gradient(135deg, #ffffff, #e3f2fd);
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	padding: 25px 20px;
+	color: #222;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dr1013facility .facility-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dr1013facility .facility-card i {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	color: #0072ff;
+	transition: color 0.3s ease;
+}
+
+.dr1013facility .facility-card:hover i {
+	color: #00c6ff;
+}
+
+.dr1013facility .facility-card h4 {
+	font-size: 1.2rem;
+	color: #004c99;
+	margin-bottom: 8px;
+}
+
+.dr1013facility .facility-card p {
+	font-size: 0.95rem;
+	color: #333;
+}
+
+@media ( max-width : 600px) {
+	.dr1013facility .facility-section h2 {
+		font-size: 2rem;
+	}
+}

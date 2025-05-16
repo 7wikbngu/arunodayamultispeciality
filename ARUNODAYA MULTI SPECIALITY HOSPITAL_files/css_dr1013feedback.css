@@ -1,0 +1,76 @@
+.dr1013feedback {
+	font-family: 'Segoe UI', sans-serif;
+	margin: 0;
+	background: #fff;
+	color: #333;
+}
+
+.dr1013feedback .feedback-section {
+	background: linear-gradient(135deg, #c8e6ff, #d4fcf2, #ffe8e8);
+	padding: 80px 25px;
+	text-align: center;
+	border-radius: 0 0 60px 60px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dr1013feedback .feedback-section h2 {
+	font-size: 3em;
+	background: linear-gradient(to right, #ff4081, #00bcd4, #4caf50);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.dr1013feedback .feedback-section p {
+	max-width: 800px;
+	margin: 0 auto 45px;
+	font-size: 1.15em;
+	color: #333;
+}
+
+.dr1013feedback .feedback-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.dr1013feedback .feedback-buttons a {
+	padding: 16px 30px;
+	border-radius: 40px;
+	font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dr1013feedback .feedback-buttons a:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dr1013feedback .btn-whatsapp {
+	background: linear-gradient(to right, #25d366, #00c851);
+}
+
+.dr1013feedback .btn-email {
+	background: linear-gradient(to right, #007bff, #6a11cb);
+}
+
+.dr1013feedback .feedback-note {
+	font-size: 1em;
+	color: #555;
+	margin-top: 20px;
+	font-style: italic;
+}
+
+@media ( max-width : 600px) {
+	.dr1013feedback .feedback-buttons a {
+		width: 100%;
+		text-align: center;
+	}
+}

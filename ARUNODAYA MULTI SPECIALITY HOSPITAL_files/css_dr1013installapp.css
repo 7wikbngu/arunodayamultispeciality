@@ -1,0 +1,42 @@
+.dr1013installapp {
+	/* Optional wrapper styling for alignment and layout */
+}
+
+.dr1013installapp .installbtnwrapper {
+	display: none; /* Button wrapper is hidden by default */
+	justify-content: center;
+	align-items: center;
+	margin: 2px auto;
+	width: fit-content;
+}
+
+/* Subtle chocolate-themed button */
+.dr1013installapp .installbtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #5e3a1c; /* Dark chocolate color */
+	color: #fff8f0; /* Light cream color for the text */
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 25px; /* Slightly rounded for a softer appearance */
+	cursor: pointer;
+	gap: 10px;
+	box-shadow: 0 6px 12px rgba(94, 58, 28, 0.3); /* Subtle chocolate-like shadow */
+	transition: all 0.3s ease-in-out; /* Smooth transition for all states */
+}
+
+/* Hover effect: lighter milk chocolate color */
+.dr1013installapp .installbtn:hover {
+	background: #7b4b2a; /* Lighter milk chocolate */
+	transform: scale(1.05); /* Slightly grow the button on hover */
+	box-shadow: 0 8px 16px rgba(160, 82, 45, 0.4); /* Stronger shadow on hover */
+}
+
+/* Active state: slightly smaller for a pressed effect */
+.dr1013installapp .installbtn:active {
+	transform: scale(0.95); /* Button shrinks when clicked */
+	box-shadow: 0 4px 8px rgba(60, 30, 10, 0.3); /* Slight shadow effect on active */
+}

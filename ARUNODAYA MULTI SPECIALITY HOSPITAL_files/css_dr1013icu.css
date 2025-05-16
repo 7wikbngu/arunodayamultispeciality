@@ -1,0 +1,73 @@
+.dr1013icu {
+	
+}
+
+.dr1013icu .icu-section {
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #1e3c72, #2a5298);
+	color: white;
+	text-align: center;
+}
+
+.dr1013icu .icu-section h2 {
+	font-size: 2.8rem;
+	margin-bottom: 20px;
+	color: white;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dr1013icu .icu-section p.subtitle {
+	font-size: 1.1rem;
+	color: #e3f2fd;
+	margin-bottom: 40px;
+}
+
+.dr1013icu .icu-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.dr1013icu .icu-card {
+	background: linear-gradient(135deg, #ffffff, #cce7f8);
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	padding: 25px 20px;
+	color: #222;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dr1013icu .icu-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dr1013icu .icu-card i {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	color: #006f8e;
+	transition: color 0.3s ease;
+}
+
+.dr1013icu .icu-card:hover i {
+	color: #00b5e2;
+}
+
+.dr1013icu .icu-card h4 {
+	font-size: 1.3rem;
+	color: #004f7f;
+	margin-bottom: 8px;
+}
+
+.dr1013icu .icu-card p {
+	font-size: 1rem;
+	color: #333;
+}
+
+@media ( max-width : 768px) {
+	.dr1013icu .icu-section h2 {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,111 @@
+.dr1013whychooseushome {
+	padding: 60px 0;
+	background: linear-gradient(to right, #e8f5fe, #f3fcf9);
+}
+
+.dr1013whychooseushome .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.dr1013whychooseushome h2 {
+	text-align: center;
+	font-size: 2.8rem;
+	margin-bottom: 20px;
+	color: #00838f; /* teal blue */
+	font-weight: 700;
+}
+
+.dr1013whychooseushome p {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #555;
+	margin-bottom: 40px;
+}
+
+.dr1013whychooseushome .why-choose-us-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.dr1013whychooseushome .why-card {
+	background: #ffffff;
+	padding: 35px;
+	text-align: center;
+	border-radius: 16px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+/* Updated colors with medical feel */
+.dr1013whychooseushome .why-card:nth-child(1) {
+	background-color: #b2ebf2; /* Light Aqua */
+}
+
+.dr1013whychooseushome .why-card:nth-child(2) {
+	background-color: #c8e6c9; /* Light Green */
+}
+
+.dr1013whychooseushome .why-card:nth-child(3) {
+	background-color: #d1c4e9; /* Lavender */
+}
+
+.dr1013whychooseushome .why-card:nth-child(4) {
+	background-color: #ffe0b2; /* Peach */
+}
+
+.dr1013whychooseushome .why-card:nth-child(5) {
+	background-color: #f8bbd0; /* Soft Pink */
+}
+
+.dr1013whychooseushome .why-card:nth-child(6) {
+	background-color: #bbdefb; /* Soft Blue */
+}
+
+/* Hover effect */
+.dr1013whychooseushome .why-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.dr1013whychooseushome .why-card i {
+	font-size: 3.2rem;
+	color: #00695c;
+	margin-bottom: 20px;
+	transition: color 0.3s ease;
+}
+
+.dr1013whychooseushome .why-card:hover i {
+	color: #004d40;
+}
+
+.dr1013whychooseushome .why-card h3 {
+	font-size: 1.6rem;
+	color: #004d40;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.dr1013whychooseushome .why-card p {
+	font-size: 1.05rem;
+	color: #333;
+	line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media ( max-width : 768px) {
+	.dr1013whychooseushome .why-card {
+		padding: 25px;
+	}
+	.dr1013whychooseushome .why-card i {
+		font-size: 2.4rem;
+	}
+	.dr1013whychooseushome .why-card h3 {
+		font-size: 1.4rem;
+	}
+}

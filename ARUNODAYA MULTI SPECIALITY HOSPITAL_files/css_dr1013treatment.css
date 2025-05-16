@@ -1,0 +1,112 @@
+/* Treatment section background and padding */
+.dr1013treatment {
+  background: #f2f9ff;
+  padding: 40px 15px;
+}
+
+/* Container with max width increased */
+.dr1013treatment .poster-container {
+  max-width: 1500px; /* Increased from 1300px */
+  margin: auto;
+  text-align: center;
+}
+
+/* Heading styling */
+.dr1013treatment .poster-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #003366;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for posters */
+.dr1013treatment .posters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min width */
+  gap: 30px;
+  width: 100%;
+}
+
+/* Individual poster card style */
+.dr1013treatment .poster-card {
+  background: linear-gradient(145deg, #ffffff, #e3f2fd);
+  border-radius: 20px;
+  padding: 0; /* Removed padding to maximize image width */
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden; /* keep rounding on images */
+}
+
+/* Hover effect */
+.dr1013treatment .poster-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.25);
+}
+
+/* Image inside card */
+.dr1013treatment .poster-card img {
+  width: 100%;
+  height: auto;
+  max-height: 480px; /* Bigger max height */
+  object-fit: contain;
+  border-radius: 20px 20px 0 0; /* round only top corners */
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional title inside card */
+.dr1013treatment .poster-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #003366;
+  margin: 15px 20px 10px 20px;
+  text-align: center;
+}
+
+/* Optional description */
+.dr1013treatment .poster-desc {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 20px 20px 20px;
+  text-align: center;
+}
+
+/* Responsive tweaks for tablets */
+@media (max-width: 1024px) {
+  .dr1013treatment .posters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  }
+  .dr1013treatment .poster-card img {
+    max-height: 420px;
+  }
+  .dr1013treatment .poster-container h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Responsive tweaks for tablets */
+@media (max-width: 768px) {
+  .dr1013treatment .posters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .dr1013treatment .poster-card img {
+    max-height: 360px;
+  }
+  .dr1013treatment .poster-container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Responsive tweaks for mobile phones */
+@media (max-width: 480px) {
+  .dr1013treatment .posters-grid {
+    grid-template-columns: 1fr; /* One column */
+  }
+  .dr1013treatment .poster-card img {
+    max-height: 320px;
+  }
+  .dr1013treatment .poster-container h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,134 @@
+.dr1013aboutushome {
+  font-family: 'Poppins', sans-serif;
+  color: #4e342e;
+}
+
+/* About Us Section */
+.dr1013aboutushome #about-modern {
+  background: linear-gradient(135deg, #fffde7, #fff3e0);
+  padding: 30px 20px; /* Reduced padding */
+  text-align: center;
+}
+
+.dr1013aboutushome .about-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dr1013aboutushome #about-modern h2 {
+  font-size: 2.8rem;
+  color: #d84315;
+  margin-bottom: 10px;
+}
+
+.dr1013aboutushome .about-tagline {
+  font-size: 1.2rem;
+  color: #795548;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.dr1013aboutushome .about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dr1013aboutushome .about-grid img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.dr1013aboutushome .about-grid img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.dr1013aboutushome .about-text {
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dr1013aboutushome .about-text strong {
+  color: #ff6f00;
+}
+
+/* Why Choose Us Section */
+.dr1013aboutushome #why-choose-us-modern {
+  background: linear-gradient(145deg, #fff3e0, #ffecb3);
+  padding: 30px 20px; /* Reduced padding */
+  text-align: center;
+}
+
+.dr1013aboutushome .why-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dr1013aboutushome #why-choose-us-modern h2 {
+  font-size: 2.5rem;
+  color: #d84315;
+  margin-bottom: 10px;
+}
+
+.dr1013aboutushome .why-tagline {
+  font-size: 1.1rem;
+  color: #6d4c41;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.dr1013aboutushome .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.dr1013aboutushome .feature-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dr1013aboutushome .feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.dr1013aboutushome .feature-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.dr1013aboutushome .feature-card h3 {
+  color: #ff6f00;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.dr1013aboutushome .feature-card p {
+  font-size: 1rem;
+  color: #5d4037;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dr1013aboutushome .about-grid {
+    flex-direction: column;
+  }
+
+  .dr1013aboutushome .about-text {
+    text-align: center;
+  }
+}
