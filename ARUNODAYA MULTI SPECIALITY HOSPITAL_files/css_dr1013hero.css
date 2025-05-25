@@ -6,12 +6,12 @@
   position: relative;
   /* background: #fcb83a; */
   background-image: url(./hero_new.jpg);
-  background-position: left bottom;
+  background-position: center;
   background-size: cover;
   min-height: 25dvh;
   display: flex;
   justify-content: end;
-  padding: 60px 20px;
+  padding: 60px 30px;
   box-sizing: border-box;
 }
 

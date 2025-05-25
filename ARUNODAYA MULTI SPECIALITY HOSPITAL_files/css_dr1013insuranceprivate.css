@@ -5,12 +5,11 @@
 /* Private Insurance Section */
 .dr1013insuranceprivate .private-insurances {
 	padding: 60px 20px;
-	background: #1e88e5;
+	background: #2083a1;
 	color: white;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 20px;
-	max-width: 1300px;
 	margin: auto;
 }
 
@@ -36,14 +35,17 @@
 
 /* Individual Logo Card */
 .dr1013insuranceprivate .insurance-logo {
-	background: rgba(255, 255, 255, 0.3);
+	background: #f4f8fd;
 	border-radius: 12px;
-	padding: 30px;
+	padding: 15px;
 	width: 220px;
+	height: 220px;
 	text-align: center;
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	align-content: center;
 }
+
 
 .dr1013insuranceprivate .insurance-logo:hover {
 	transform: translateY(-5px);
@@ -57,6 +59,14 @@
 	object-fit: contain;
 	display: block;
 	margin: auto;
+}
+
+.dr1013insuranceprivate .insurance-logo img.enlarge{
+	max-width: 100%;
+	height: 10rem;
+	display: block;
+	margin: auto;
+	object-fit: cover;
 }
 
 /* Optional Logo Description */

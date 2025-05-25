@@ -1,6 +1,7 @@
 .dr1013speciality {
 	padding: 60px 0;
 	background-color: #f4f8fd;
+	border-radius: 20px;
 }
 
 .dr1013speciality .container {
@@ -12,9 +13,15 @@
 .dr1013speciality h2 {
 	text-align: center;
 	font-size: 2.8rem;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	color: #2083a1;
 	font-weight: 600;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.dr1013speciality p {
+	color: #777;
+	text-align: center;
 }
 
 .dr1013speciality .specialities-grid {
@@ -52,8 +59,19 @@
 	color: #fcb83a;
 }
 
+.dr1013speciality .speciality-card img {
+	height: 60px;
+	width: 60px;
+	/* color: #2083a1; */
+	filter: invert(42%) sepia(55%) saturate(6266%) hue-rotate(172deg) brightness(90%) contrast(75%);	transition: color 0.3s ease;
+}
+
+.dr1013speciality .speciality-card:hover img {
+	filter: invert(68%) sepia(62%) saturate(498%) hue-rotate(353deg) brightness(101%) contrast(98%);
+}
+
 .dr1013speciality .speciality-card h3 {
-	font-size: 1.8rem;
+	font-size: 25px;
 	color: #2083a1;
 	margin-bottom: 15px;
 	font-weight: 600;

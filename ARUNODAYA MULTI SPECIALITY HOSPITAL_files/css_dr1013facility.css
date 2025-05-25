@@ -5,16 +5,17 @@
 
 .dr1013facility .facility-section {
 	padding: 60px 20px;
-	background: linear-gradient(135deg, #00c6ff, #0072ff);
+	background: #2083a1;
 	color: white;
 	text-align: center;
+	border-radius: 20px;
 }
 
 .dr1013facility .facility-section h2 {
 	font-size: 2.8rem;
 	margin-bottom: 12px;
 	color: #fff;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .dr1013facility .facility-section p.subtitle {
@@ -32,7 +33,7 @@
 }
 
 .dr1013facility .facility-card {
-	background: linear-gradient(135deg, #ffffff, #e3f2fd);
+	background: #f4f8fd;
 	border-radius: 15px;
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	padding: 25px 20px;
@@ -43,28 +44,33 @@
 .dr1013facility .facility-card:hover {
 	transform: translateY(-6px);
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
 }
 
 .dr1013facility .facility-card i {
 	font-size: 2.5rem;
 	margin-bottom: 15px;
-	color: #0072ff;
+	color: #2083a1;
 	transition: color 0.3s ease;
 }
 
 .dr1013facility .facility-card:hover i {
-	color: #00c6ff;
+	color: #fcb83a;
 }
 
 .dr1013facility .facility-card h4 {
 	font-size: 1.2rem;
-	color: #004c99;
+	color: #2083a1;
 	margin-bottom: 8px;
+}
+
+.dr1013facility .facility-card:hover h4{ 
+	color: #fcb83a;
 }
 
 .dr1013facility .facility-card p {
 	font-size: 0.95rem;
-	color: #333;
+	color: #777;
 }
 
 @media ( max-width : 600px) {

@@ -1,7 +1,8 @@
 .dr1013map {
   padding: 2rem 1rem;
-  background-color: #fff8f1; /* soft chocolate background */
+  background-color: #f8f9fa; /* soft chocolate background */
   font-family: 'Segoe UI', sans-serif;
+  border-radius: 20px;
 }
 
 .dr1013map .map-section {
@@ -13,7 +14,7 @@
 .dr1013map .map-label {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #5c3a21; /* rich chocolate brown */
+  color: #2083a1; /* rich chocolate brown */
   margin-bottom: 1rem;
 }
 

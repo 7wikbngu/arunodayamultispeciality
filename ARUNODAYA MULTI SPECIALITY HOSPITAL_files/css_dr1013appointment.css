@@ -4,9 +4,10 @@
 
 .dr1013appointment .trauma-care-section {
 	padding: 60px 20px;
-	background: linear-gradient(135deg, #ff6f61, #f78ca0);
+	background: #2083a1;
 	color: white;
 	text-align: center;
+	border-radius: 16px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +32,8 @@
 }
 
 .dr1013appointment .contact-card {
-	background: rgba(255, 255, 255, 0.3);
+	/* background: rgba(255, 255, 255, 0.3); */
+	background: #e3f2fd;
 	border-radius: 10px;
 	padding: 20px;
 	width: 250px;
@@ -47,29 +49,33 @@
 
 .dr1013appointment .contact-card i {
 	font-size: 2.5rem;
-	color: #004c99;
+	color: #2083a1;
 	margin-bottom: 15px;
 	transition: color 0.3s ease;
 }
 
 .dr1013appointment .contact-card:hover i {
-	color: #ff6f61;
+	color: #fcb83a;
+}
+
+.dr1013appointment .contact-card:hover h4 {
+	color: #fcb83a;
 }
 
 .dr1013appointment .contact-card h4 {
 	font-size: 1.4rem;
-	color: #004c99;
+	color: #2083a1;
 	margin-bottom: 12px;
 }
 
 .dr1013appointment .contact-card p {
 	font-size: 1rem;
-	color: white;
+	color: #777;
 }
 
 .dr1013appointment .cta-button {
 	padding: 15px 25px;
-	background-color: #004c99;
+	background-color: #98AFBA;
 	color: white;
 	font-size: 1.2rem;
 	text-decoration: none;
@@ -79,7 +85,7 @@
 }
 
 .dr1013appointment .cta-button:hover {
-	background-color: #005caa;
+	background-color: #fcb83a;
 }
 
 @media ( max-width : 768px) {

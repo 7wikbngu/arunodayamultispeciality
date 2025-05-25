@@ -1,16 +1,21 @@
 .dr1013healthscheme {
 	/* container wrapper if needed */
-	
+
 }
 
 /* Employee Health Schemes Section */
 .dr1013healthscheme .employee-health-schemes {
 	padding: 60px 20px;
-	background: linear-gradient(135deg, #0288d1, #26c6da);
+	background: #2083a1;
 	color: white;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	position: relative;
+	border-radius: 20px;
+}
+
+.dr1013healthscheme .employee-health-schemes img {
+	background: #f4f8fd;
 }
 
 /* Responsive small logo */
@@ -23,6 +28,7 @@
 	border-radius: 12px;
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s ease;
+	align-self: center;
 }
 
 @media ( max-width : 480px) {
@@ -52,7 +58,7 @@
 }
 
 .dr1013healthscheme .scheme-card {
-	background: rgba(255, 255, 255, 0.3);
+	background: #f4f8fd;
 	border-radius: 10px;
 	padding: 30px;
 	width: 250px;
@@ -68,29 +74,34 @@
 
 .dr1013healthscheme .scheme-card i {
 	font-size: 3rem;
-	color: #004c99;
+	color: #2083a1;
 	margin-bottom: 15px;
 	transition: color 0.3s ease;
 }
 
 .dr1013healthscheme .scheme-card:hover i {
-	color: #ff6f61;
+	color: #fcb83a;
 }
 
 .dr1013healthscheme .scheme-card h4 {
 	font-size: 1.5rem;
-	color: #004c99;
+	color: #2083a1;
 	margin-bottom: 12px;
+}
+
+
+.dr1013healthscheme .scheme-card:hover h4 {
+	color: #fcb83a;
 }
 
 .dr1013healthscheme .scheme-card p {
 	font-size: 1rem;
-	color: white;
+	color: #777;
 }
 
 .dr1013healthscheme .cta-button {
 	padding: 15px 25px;
-	background-color: #004c99;
+	background-color: #98AFBA;
 	color: white;
 	font-size: 1.2rem;
 	text-decoration: none;
@@ -101,7 +112,7 @@
 }
 
 .dr1013healthscheme .cta-button:hover {
-	background-color: #005caa;
+	background-color: #fcb83a;
 }
 
 @media ( max-width : 768px) {

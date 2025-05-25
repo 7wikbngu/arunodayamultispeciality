@@ -1,16 +1,15 @@
 .dr1013insurancepartner {
-	background: #eaf6fb;
+	background: #f8f9fa;
 }
 
 /* Insurance Partners Section */
 .dr1013insurancepartner .insurance-partners {
 	padding: 60px 20px;
-	background: #0288d1;
-	color: white;
+	background: #f8f9fa;
+	color: #2083a1;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 20px;
-	max-width: 1300px;
 	margin: auto;
 }
 
@@ -23,7 +22,7 @@
 .dr1013insurancepartner .insurance-partners p {
 	font-size: 1.2rem;
 	margin-bottom: 40px;
-	color: #e3f2fd;
+	color: #777;
 }
 
 /* Logos Container */
@@ -37,7 +36,7 @@
 
 /* Individual Partner Logo Box */
 .dr1013insurancepartner .partner-logo {
-	background: rgba(255, 255, 255, 0.3);
+	background: #f4f8fd;
 	border-radius: 12px;
 	padding: 30px;
 	width: 220px;
@@ -69,7 +68,7 @@
 
 .dr1013insurancepartner .partner-logo p {
 	font-size: 1rem;
-	color: white;
+	color: #f4f8fd;
 	margin-top: 10px;
 }
 

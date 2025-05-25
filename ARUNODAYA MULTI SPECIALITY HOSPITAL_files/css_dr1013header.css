@@ -3,9 +3,21 @@
 	margin: 0;
 	padding: 0;
 }
+.dr1013header .header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dr1013header .top-row {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	gap: 10px;
+}
 
 .dr1013header header {
-	background: #f8f9fa;
+	background: #fefefe;
 	color: #2083a1;
 	position: sticky;
 	top: 0;
@@ -13,44 +25,20 @@
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dr1013header .header-container {
+.dr1013header .logo img {
+	width: 150px;
+	height: 100px;
+	/* display: block; */
+	margin: 15px 20px;
+	/* border-image-width: 15px 40px; */
+}
+
+/* .dr1013header .header-container {
 	max-width: 100%;
 	margin: auto;
 	padding: 0.3rem 1rem; /* Reduced padding */
-}
+/* } */ */
 
-.dr1013header .top-row {
-	display: flex;
-	align-items: stretch;
-	flex-wrap: wrap;
-}
-
-.dr1013header .top-left {
-	display: flex;
-	align-items: center;
-    justify-content: space-between;
-	flex-wrap: wrap;
-	/* gap: 10px; */
-}
-
-.dr1013header .left-block {
-	display: flex;
-	align-items: center;
-	/* gap: 10px; */
-}
-
-.dr1013header .logo img {
-	max-width: 120px;
-	height: auto;
-	display: block;
-	margin: 0;
-}
-
-.dr1013header .text-wrap {
-	display: flex;
-	flex-direction: column;
-	line-height: 1.2;
-}
 
 .dr1013header .header-title {
 	font-size: 1.4rem;
@@ -67,16 +55,22 @@
 	letter-spacing: 0.3px;
 }
 
+.dr1013header .menu-toggle-container {
+	align-self: center;
+}
+
 .dr1013header .menu-toggle {
 	display: none;
 	font-size: 2rem;
 	color: #2083a1;
 	cursor: pointer;
+	margin-right: 20px;
 }
 
 .dr1013header nav {
 	/* margin-left: auto; */
     align-items: center;
+	align-self: center;
 }
 
 .dr1013header nav ul {
@@ -87,10 +81,6 @@
 	padding: 0;
 	margin: 0;
 	gap: 20px;
-}
-
-.dr1013header nav ul:hover {
-	color: #fcb83a;
 }
 
 .dr1013header nav ul li a {
@@ -109,19 +99,22 @@
 }
 
 .dr1013header nav ul li a:hover {
-	background: rgba(255, 255, 255, 0.15);
+	/* background: rgba(251, 255, 255, 0.15); */
+	/* background-color: #E5E4E2; */
+	background-color: #f4f8fd;
+	border-radius: 5px;
     color: #fcb83a;
 }
 
 /* Mobile View */
 @media ( max-width : 768px) {
 	.dr1013header .top-row {
-		flex-direction: column;
-		align-items: stretch;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 	.dr1013header .menu-toggle {
 		display: block;
-		margin-top: 10px;
+		/* margin-top: 10px; */
 	}
 	.dr1013header nav {
 		width: 100%;

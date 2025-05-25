@@ -3,8 +3,8 @@
 }
 
 .dr1013footer .footer {
-	background-color: #003366;
-	color: #ffffff;
+	background-color: #2083a1;
+	color: #e3f2fd;
 	padding: 60px 30px 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -30,7 +30,7 @@
 .dr1013footer .footer h3 {
 	margin-top: 15px;
 	font-size: 1.2rem;
-	color: #ffffff;
+	color: #e3f2fd;
 }
 
 .dr1013footer .footer p, .footer a {
@@ -42,6 +42,8 @@
 
 .dr1013footer .footer a:hover {
 	text-decoration: underline;
+	background: rgba(255, 255, 255, 0.15);
+    color: #fcb83a;
 }
 
 .dr1013footer .social-icons {
@@ -63,7 +65,7 @@
 }
 
 .dr1013footer .social-icons a:hover {
-	background: #ffffff55;
+	background: #fcb83a;
 }
 
 .dr1013footer .qr-code img {
