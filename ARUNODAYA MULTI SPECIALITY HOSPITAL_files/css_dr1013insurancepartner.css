@@ -5,8 +5,8 @@
 /* Insurance Partners Section */
 .dr1013insurancepartner .insurance-partners {
 	padding: 60px 20px;
-	background: #f8f9fa;
-	color: #2083a1;
+	background: #2083a1;
+	color: white;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 20px;
@@ -22,16 +22,16 @@
 .dr1013insurancepartner .insurance-partners p {
 	font-size: 1.2rem;
 	margin-bottom: 40px;
-	color: #777;
+	color: #e3f2fd;
 }
 
 /* Logos Container */
 .dr1013insurancepartner .partners-logos {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 40px;
-	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* Individual Partner Logo Box */
@@ -39,7 +39,6 @@
 	background: #f4f8fd;
 	border-radius: 12px;
 	padding: 30px;
-	width: 220px;
 	text-align: center;
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -53,11 +52,19 @@
 /* Responsive Logo Image */
 .dr1013insurancepartner .partner-logo img {
 	max-width: 100%;
-	height: auto;
+	height: 10rem;
 	object-fit: contain;
 	display: block;
 	margin: auto;
 }
+
+/* .dr1013insuranceprivate .insurance-logo img.enlarge{
+	max-width: 100%;
+	height: 10rem;
+	display: block;
+	margin: auto;
+	object-fit: cover;
+} */
 
 /* Optional Titles or Descriptions */
 .dr1013insurancepartner .partner-logo h4 {

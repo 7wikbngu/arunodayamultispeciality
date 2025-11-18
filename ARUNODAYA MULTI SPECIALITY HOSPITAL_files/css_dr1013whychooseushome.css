@@ -1,6 +1,7 @@
 .dr1013whychooseushome {
 	padding: 60px 0;
-	background: linear-gradient(to right, #e8f5fe, #f3fcf9);
+	background: #2083a1;
+	border-radius: 20px;
 }
 
 .dr1013whychooseushome .container {
@@ -13,14 +14,14 @@
 	text-align: center;
 	font-size: 2.8rem;
 	margin-bottom: 20px;
-	color: #00838f; /* teal blue */
+	color: #fff;
 	font-weight: 700;
 }
 
 .dr1013whychooseushome p {
 	text-align: center;
 	font-size: 1.2rem;
-	color: #555;
+	color: #e3f2fd;
 	margin-bottom: 40px;
 }
 
@@ -94,31 +95,6 @@
     }
 }
 
-/* Updated colors with medical feel */
-.dr1013whychooseushome .why-card:nth-child(1) {
-	background-color: #b2ebf2; /* Light Aqua */
-}
-
-.dr1013whychooseushome .why-card:nth-child(2) {
-	background-color: #c8e6c9; /* Light Green */
-}
-
-.dr1013whychooseushome .why-card:nth-child(3) {
-	background-color: #d1c4e9; /* Lavender */
-}
-
-.dr1013whychooseushome .why-card:nth-child(4) {
-	background-color: #ffe0b2; /* Peach */
-}
-
-.dr1013whychooseushome .why-card:nth-child(5) {
-	background-color: #f8bbd0; /* Soft Pink */
-}
-
-.dr1013whychooseushome .why-card:nth-child(6) {
-	background-color: #bbdefb; /* Soft Blue */
-}
-
 /* Hover effect */
 .dr1013whychooseushome .why-card:hover {
 	transform: translateY(-8px);
@@ -127,25 +103,30 @@
 
 .dr1013whychooseushome .why-card i {
 	font-size: 3.2rem;
-	color: #00695c;
+	color: #2083a1;
 	margin-bottom: 20px;
 	transition: color 0.3s ease;
 }
 
 .dr1013whychooseushome .why-card:hover i {
-	color: #004d40;
+	color: #fcb83a;
 }
 
 .dr1013whychooseushome .why-card h3 {
 	font-size: 1.6rem;
-	color: #004d40;
+	color: #2083a1;
 	margin-bottom: 10px;
 	font-weight: 600;
 }
 
+.dr1013whychooseushome .why-card:hover h3 {
+	color: #fcb83a;
+}
+
+
 .dr1013whychooseushome .why-card p {
 	font-size: 1.05rem;
-	color: #333;
+	color: #777;
 	line-height: 1.6;
 }
 

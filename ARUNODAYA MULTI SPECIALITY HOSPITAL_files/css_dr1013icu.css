@@ -4,8 +4,8 @@
 
 .dr1013icu .icu-section {
 	padding: 60px 20px;
-	background: #f8f9fa;
-	color: #2083a1;
+	background: #2083a1;
+	color: white;
 	text-align: center;
 	border-radius: 20px;
 }
@@ -13,13 +13,13 @@
 .dr1013icu .icu-section h2 {
 	font-size: 2.8rem;
 	margin-bottom: 20px;
-	color: #2083a1;
+	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .dr1013icu .icu-section p.subtitle {
 	font-size: 1.1rem;
-	color: #777;
+	color: #e3f2fd;
 	margin-bottom: 40px;
 }
 

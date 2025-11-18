@@ -9,6 +9,7 @@
   background-position: center;
   background-size: cover;
   min-height: 25dvh;
+  height: 65vh;
   display: flex;
   justify-content: end;
   padding: 60px 30px;

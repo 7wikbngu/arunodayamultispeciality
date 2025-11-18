@@ -6,8 +6,8 @@
 /* Employee Health Schemes Section */
 .dr1013healthscheme .employee-health-schemes {
 	padding: 60px 20px;
-	background: #2083a1;
-	color: white;
+	background: #f8f9fa;
+	color: #2083a1;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	position: relative;
@@ -40,21 +40,22 @@
 .dr1013healthscheme .employee-health-schemes h2 {
 	font-size: 2.8rem;
 	margin-bottom: 20px;
-	color: white;
+	color: #2083a1;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .dr1013healthscheme .employee-health-schemes p {
 	font-size: 1.2rem;
 	margin-bottom: 30px;
-	color: #e3f2fd;
+	color: #777;
 }
 
 .dr1013healthscheme .schemes-cards {
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .dr1013healthscheme .scheme-card {
@@ -101,7 +102,7 @@
 
 .dr1013healthscheme .cta-button {
 	padding: 15px 25px;
-	background-color: #98AFBA;
+	background-color: #2083a1;
 	color: white;
 	font-size: 1.2rem;
 	text-decoration: none;

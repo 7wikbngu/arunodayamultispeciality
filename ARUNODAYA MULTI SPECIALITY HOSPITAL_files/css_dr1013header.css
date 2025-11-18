@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	height: 120px;
 }
 
 .dr1013header .top-row {
@@ -114,24 +115,58 @@
 	}
 	.dr1013header .menu-toggle {
 		display: block;
-		/* margin-top: 10px; */
+		margin-right: 20px;
 	}
 	.dr1013header nav {
 		width: 100%;
-		margin-top: 10px;
+        margin-top: 12px;
+	}
+
+	.dr1013header nav {
+		position: relative;
+		top: 65px;
+		right: 0;
+		z-index: 100;
+		visibility: visible;
+		width: 300px;
+		height: 100%;
+		background: #FEFEFE;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+
+	.dr1013header nav ::after {
+		position: relative;
+		top: 65px;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.2);
+		content: '';
+		opacity: 1;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
 	}
 	.dr1013header nav ul {
 		display: none;
 		flex-direction: column;
-		background: #F1F2F3;
+		background: #FEFEFE;
 		width: 100%;
+		visibility: visible;
+	}
+	.dr1013header nav.show {
+		display: flex;
+		visibility: visible;
 	}
 	.dr1013header nav ul.show {
 		display: flex;
+        max-height: 60vh;
+        overflow-y: auto;
+		z-index: 1000;
 	}
 	.dr1013header nav ul li {
 		padding: 10px 16px;
-		border-bottom: 1px solid #066;
+		/* border-bottom: 1px solid #066; */
 	}
 	.dr1013header nav ul li:last-child {
 		border-bottom: none;
