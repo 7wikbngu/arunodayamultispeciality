@@ -1,16 +1,16 @@
 function toggleMenu() {
-	const menu = document.getElementById('menu');
+	const menu = document.querySelector('.dr1013header nav');
 	menu.classList.toggle('show');
 }
 
-// Auto-close mobile menu when link clicked
+// Hide menu when clicking on a link inside the ul
 document.addEventListener('DOMContentLoaded', () => {
-	const menuLinks = document.querySelectorAll('#menu a');
-	const menu = document.getElementById('menu');
+    const nav = document.querySelector('.dr1013header nav');
+    const menuLinks = nav.querySelectorAll('ul li a');
 
-	menuLinks.forEach(link => {
-		link.addEventListener('click', () => {
-			menu.classList.remove('show');
-		});
-	});
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('show'); // hide the menu
+        });
+    });
 });

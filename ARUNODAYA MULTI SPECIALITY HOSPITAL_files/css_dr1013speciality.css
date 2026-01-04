@@ -14,7 +14,7 @@
 	text-align: center;
 	font-size: 2.8rem;
 	margin-bottom: 25px;
-	color: #2083a1;
+	color: #237A9B;
 	font-weight: 600;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -50,7 +50,7 @@
 
 .dr1013speciality .speciality-card i {
 	font-size: 3.5rem;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 25px;
 	transition: color 0.3s ease;
 }
@@ -62,7 +62,7 @@
 .dr1013speciality .speciality-card img {
 	height: 60px;
 	width: 60px;
-	/* color: #2083a1; */
+	/* color: #237A9B; */
 	filter: invert(42%) sepia(55%) saturate(6266%) hue-rotate(172deg) brightness(90%) contrast(75%);	transition: color 0.3s ease;
 }
 
@@ -72,7 +72,7 @@
 
 .dr1013speciality .speciality-card h3 {
 	font-size: 25px;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 15px;
 	font-weight: 600;
 }
@@ -93,7 +93,7 @@
 	transition: all 0.3s ease;
 }
 
-@media ( max-width : 768px) {
+@media ( max-width : 632px) {
 	.dr1013speciality .speciality-card i {
 		font-size: 2.8rem;
 	}

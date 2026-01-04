@@ -123,7 +123,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .dr1013aboutushome .about-grid {
     flex-direction: column;
   }

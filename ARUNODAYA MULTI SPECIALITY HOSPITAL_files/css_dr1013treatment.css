@@ -86,7 +86,7 @@
 }
 
 /* Responsive tweaks for tablets */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .dr1013treatment .posters-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }

@@ -1,5 +1,5 @@
 .dr1013career {
-	
+
 }
 
 /* Career Section */
@@ -13,7 +13,7 @@
 }
 
 .dr1013career .career-container {
-	max-width: 1000px;
+	max-width: 500px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -78,7 +78,7 @@
 }
 
 /* Responsive Design */
-@media ( max-width : 768px) {
+@media ( max-width : 632px) {
 	.dr1013career .career-summary {
 		font-size: 1rem;
 	}

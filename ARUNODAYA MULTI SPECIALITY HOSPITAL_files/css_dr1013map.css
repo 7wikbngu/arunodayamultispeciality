@@ -1,8 +1,8 @@
 .dr1013map {
-  padding: 2rem 1rem;
-  background-color: #f8f9fa; /* soft chocolate background */
+  background-color: #f8f9fa;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .dr1013map .map-section {
@@ -14,7 +14,7 @@
 .dr1013map .map-label {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2083a1; /* rich chocolate brown */
+  color: #237A9B; /* rich chocolate brown */
   margin-bottom: 1rem;
 }
 
@@ -22,7 +22,6 @@
   max-width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .dr1013map .map-frame {
@@ -33,7 +32,7 @@
 }
 
 /* Responsive height for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .dr1013map .map-frame {
     height: 300px;
   }

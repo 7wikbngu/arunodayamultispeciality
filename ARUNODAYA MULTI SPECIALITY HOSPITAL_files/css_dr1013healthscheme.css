@@ -7,7 +7,7 @@
 .dr1013healthscheme .employee-health-schemes {
 	padding: 60px 20px;
 	background: #f8f9fa;
-	color: #2083a1;
+	color: #237A9B;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	position: relative;
@@ -40,7 +40,7 @@
 .dr1013healthscheme .employee-health-schemes h2 {
 	font-size: 2.8rem;
 	margin-bottom: 20px;
-	color: #2083a1;
+	color: #237A9B;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -51,7 +51,12 @@
 }
 
 .dr1013healthscheme .schemes-cards {
-	display: grid;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto; */
+  display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 30px;
 	max-width: 1200px;
@@ -59,12 +64,18 @@
 }
 
 .dr1013healthscheme .scheme-card {
-	background: #f4f8fd;
+	/* background: #f4f8fd;
 	border-radius: 10px;
 	padding: 30px;
 	width: 250px;
 	text-align: center;
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  background: #f4f8fd;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	padding: 25px 20px;
+	color: #222;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -75,7 +86,7 @@
 
 .dr1013healthscheme .scheme-card i {
 	font-size: 3rem;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 15px;
 	transition: color 0.3s ease;
 }
@@ -86,7 +97,7 @@
 
 .dr1013healthscheme .scheme-card h4 {
 	font-size: 1.5rem;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 12px;
 }
 
@@ -102,7 +113,7 @@
 
 .dr1013healthscheme .cta-button {
 	padding: 15px 25px;
-	background-color: #2083a1;
+	background-color: #237A9B;
 	color: white;
 	font-size: 1.2rem;
 	text-decoration: none;
@@ -116,7 +127,7 @@
 	background-color: #fcb83a;
 }
 
-@media ( max-width : 768px) {
+@media ( max-width : 632px) {
 	.dr1013healthscheme .schemes-cards {
 		flex-direction: column;
 		gap: 30px;

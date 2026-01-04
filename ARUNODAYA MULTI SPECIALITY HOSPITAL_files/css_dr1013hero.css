@@ -38,7 +38,7 @@
   font-weight: 700;
   margin-bottom: 5px;
   animation: slideInUp 1.5s ease forwards;
-  color: #2083a1;
+  color: #237A9B;
   -webkit-animation: slideInUp 1.5s ease forwards;
 }
 
@@ -52,7 +52,7 @@
 
 /* CTA Button */
 .dr1013hero .cta-button {
-  background-color: #2083a1;
+  background-color: #237A9B;
   color: white;
   margin-top: 15px;
   padding: 14px 32px;
@@ -68,7 +68,12 @@
 
 .dr1013hero .cta-button:hover {
   background-color: #0066cc;
+  transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0, 102, 204, 0.8);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
 }
 
 /* Animations */
@@ -89,7 +94,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .dr1013hero {
     padding: 40px 15px;
   }

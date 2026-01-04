@@ -1,11 +1,10 @@
 .dr1013contactushome {
-	
+
 }
 
 .dr1013contactushome .contact-section {
-	background: #2083a1;
+	background: #237A9B;
 	padding: 60px 20px;
-	max-width: 1200px;
 	margin: auto;
 	border-radius: 16px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -72,17 +71,20 @@
 
 .dr1013contactushome .info-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 20px;
+  justify-content: center;
 }
 
 .dr1013contactushome .info-box {
 	background: #e3f2fd;
-	color: #2083a1;
+	color: #237A9B;
 	padding: 20px;
 	border-radius: 12px;
 	text-align: center;
 	box-shadow: 0 8px 16px rgba(13, 71, 161, 0.2);
+  max-width: 300px;
+  min-width: 300px
 }
 
 .dr1013contactushome .info-box i {
@@ -112,7 +114,7 @@
 	color: #777;
 }
 
-@media ( max-width : 768px) {
+@media ( max-width : 632px) {
 	.dr1013contactushome .contact-wrapper {
 		flex-direction: column;
 	}

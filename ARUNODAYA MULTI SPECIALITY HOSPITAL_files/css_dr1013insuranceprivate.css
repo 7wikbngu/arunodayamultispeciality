@@ -6,7 +6,7 @@
 .dr1013insuranceprivate .private-insurances {
 	padding: 60px 20px;
 	background: #f8f9fa;
-	color: #2083a1;
+	color: #237A9B;
 	text-align: center;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	border-radius: 20px;
@@ -82,7 +82,7 @@
 }
 
 /* Responsive Tweaks */
-@media ( max-width : 768px) {
+/* @media ( max-width : 632px) {
 	.dr1013insuranceprivate .private-insurances {
 		padding: 40px 20px;
 	}
@@ -99,7 +99,7 @@
 	.dr1013insuranceprivate .insurance-logo p {
 		font-size: 0.9rem;
 	}
-}
+} */
 
 @media ( max-width : 480px) {
 	.dr1013insuranceprivate .private-insurances h2 {

@@ -74,7 +74,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .dr1013catalogue h2 {
     font-size: 2rem;
   }

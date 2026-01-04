@@ -1,11 +1,11 @@
 .dr1013appointment {
-	
+
 }
 
 .dr1013appointment .trauma-care-section {
 	padding: 60px 20px;
 	background: #f8f9fa;
-	color: #2083a1;
+	color: #237A9B;
 	text-align: center;
 	border-radius: 16px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 .dr1013appointment .trauma-care-section h2 {
 	font-size: 2.8rem;
 	margin-bottom: 20px;
-	color: #2083a1;
+	color: #237A9B;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -49,7 +49,7 @@
 
 .dr1013appointment .contact-card i {
 	font-size: 2.5rem;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 15px;
 	transition: color 0.3s ease;
 }
@@ -64,7 +64,7 @@
 
 .dr1013appointment .contact-card h4 {
 	font-size: 1.4rem;
-	color: #2083a1;
+	color: #237A9B;
 	margin-bottom: 12px;
 }
 
@@ -75,7 +75,7 @@
 
 .dr1013appointment .cta-button {
 	padding: 15px 25px;
-	background-color: #2083a1;
+	background-color: #237A9B;
 	color: white;
 	font-size: 1.2rem;
 	text-decoration: none;
@@ -88,7 +88,7 @@
 	background-color: #fcb83a;
 }
 
-@media ( max-width : 768px) {
+@media ( max-width : 632px) {
 	.dr1013appointment .contact-info {
 		flex-direction: column;
 		gap: 30px;
