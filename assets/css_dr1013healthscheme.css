@@ -101,6 +101,18 @@
 	margin-bottom: 12px;
 }
 
+.dr1013healthscheme .scheme-card .scheme-card-icon {
+  vertical-align: -0.125em;
+  color: #237A9B;
+  display: inline-block;
+  font-size: 4rem;
+	/* margin-bottom: 10px; */
+	transition: color 0.3s ease;
+}
+
+.dr1013healthscheme .scheme-card:hover .scheme-card-icon {
+  color: #fcb83a;
+}
 
 .dr1013healthscheme .scheme-card:hover h4 {
 	color: #fcb83a;

@@ -1,0 +1,89 @@
+/* hero-3d-contain.css */
+.hero3d {
+  height: 70vh;
+  min-height: 25dvh;
+  perspective: 1000px;
+  overflow: hidden;
+  background: #0e1a22; /* backdrop for letterboxing when using contain */
+}
+
+.hero3d__scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Entire image visible */
+.hero3d__img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;          /* key change: show full image */
+  object-position: center;      /* tweak if the subject is off-center */
+  transform: translateZ(0);
+}
+
+/* Softer overlay to avoid hiding image details */
+.hero3d__overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.18), rgba(0,0,0,0.32));
+  pointer-events: none;
+}
+
+/* Content card kept readable but less obtrusive */
+.hero3d__content {
+  position: relative; z-index: 2;
+  max-width: 700px; margin: 0 auto;
+  color: #fff; text-align: right;
+  padding: 3.5rem 1rem;
+
+  background: rgba(12, 24, 32, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  backdrop-filter: saturate(1.05) blur(5px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.28);
+}
+
+.hero3d__content h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #ffffff;
+}
+.hero3d__content h2:first-of-type {
+  border-bottom: 4px solid #237A9B;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #237A9B; color: #fff;
+  padding: 12px 18px; border-radius: 10px; font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.cta-button:hover,
+.cta-button:focus-visible {
+  background: #1c627d;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.3);
+  outline: 2px solid #eaf6fb;
+  outline-offset: 2px;
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .hero3d__scene,
+  .hero3d__img,
+  .hero3d__overlay,
+  .hero3d__content,
+  .cta-button {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
