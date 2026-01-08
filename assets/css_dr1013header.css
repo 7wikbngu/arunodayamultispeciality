@@ -21,6 +21,7 @@
 	background: #fefefe;
 	color: #237A9B;
 	position: sticky;
+  padding: 3px;
 	top: 0;
 	z-index: 1000;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);

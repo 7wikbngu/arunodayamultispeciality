@@ -43,11 +43,11 @@
 }
 
 .dr1013floatingbuttons .fab-btn.whatsapp-share {
-	background: linear-gradient(135deg, #0e8f61, #1ebea5);
+	background: #fcb83a;
 }
 
 .dr1013floatingbuttons .fab-btn.top {
-	background: linear-gradient(135deg, #004c99, #007bff);
+	background: #237A9B;
 }
 
 @media ( max-width : 632px) {

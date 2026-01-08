@@ -1,114 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hospital Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Arunodaya Multispeciality Hospital Gallery | Srikakulam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/logo.png">
+  <link rel="stylesheet" href="./assets/css_dr1013header.css">
 	<link rel="stylesheet" href="./assets/css_dr1013.css">
-	<link rel="stylesheet" href="./assets/css_dr1013header.css">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f4f8fd;
-            color: #237A9B;
-        }
-
-        header {
-            background-color: #237A9B;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            padding: 30px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            cursor: pointer;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-            border-color: #fcb83a;
-        }
-
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.85);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            border: 5px solid #fcb83a;
-        }
-
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 36px;
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 50px;
-            color: #fff;
-            cursor: pointer;
-            padding: 10px;
-            user-select: none;
-        }
-
-        .prev { left: 30px; }
-        .next { right: 30px; }
-
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            text-align: center;
-            background-color: #237A9B;
-            color: white;
-        }
-    </style>
+  <link rel="stylesheet" href="./assets/css/photos.css">
+  <link rel="stylesheet" href="./assets/css_dr1013footer.css">
+  <link rel="stylesheet" href="./assets/css_dr1013installapp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
 <div id="header-placeholder"></div>
-<!-- <header>
-    <h1>Hospital Photo Gallery</h1>
-    <p>Facilities & Dedicated Staff</p>
-</header> -->
 
 <div class="container">
     <div class="gallery" id="gallery"></div>
@@ -122,80 +29,11 @@
     <span class="nav next" onclick="nextImage()">❯</span>
 </div>
 
-<footer>
-    © 2026 Your Hospital Name. All Rights Reserved.
-</footer>
+<div id="footer-placeholder"></div>
 
-<script>
-  // Load header.html into this page
-  fetch('header.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('header-placeholder').innerHTML = html;
-    })
-    .catch(err => console.error('Error loading header:', err));
-</script>
-<script src="assets/js_file_dr1013header.js"></script>
-<script>
-    const gallery = document.getElementById('gallery');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    let images = [];
-    let currentIndex = 0;
-
-    // Load images from JSON
-    fetch('images.json')
-        .then(res => res.json())
-        .then(data => {
-            images = data;
-            images.forEach((img, index) => {
-                const image = document.createElement('img');
-                image.src = img.src;
-                image.alt = img.alt;
-                image.loading = 'lazy';
-                image.addEventListener('click', () => openLightbox(index));
-                gallery.appendChild(image);
-            });
-        })
-        .catch(err => console.error('Error loading images:', err));
-
-    function openLightbox(index) {
-        currentIndex = index;
-        lightboxImg.src = images[currentIndex].src;
-        lightboxImg.alt = images[currentIndex].alt;
-        lightbox.style.display = 'flex';
-    }
-
-    function closeLightbox() {
-        lightbox.style.display = 'none';
-        lightboxImg.src = '';
-    }
-
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        openLightbox(currentIndex);
-    }
-
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        openLightbox(currentIndex);
-    }
-
-    // Keyboard navigation
-    document.addEventListener('keydown', e => {
-        if (lightbox.style.display !== 'flex') return;
-
-        if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowRight') nextImage();
-        if (e.key === 'ArrowLeft') prevImage();
-    });
-
-    // Close on background click
-    lightbox.addEventListener('click', e => {
-        if (e.target === lightbox) closeLightbox();
-    });
-</script>
+<script src="./assets/scripts/arunodaya-hospital-layout.js"></script>
+<script src="./assets/js_file_dr1013header.js"></script>
+<script src="./assets/scripts/arunodaya-hospital-gallery.js"></script>
 
 </body>
 </html>

@@ -2,13 +2,16 @@
   background-color: #f4f8fc;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); */
 }
 
 .dr1013map .map-section {
   text-align: center;
   margin: 2rem auto;
-  max-width: 960px;
+  max-width: 60%;
+}
+.dr1013map .map-section iframe {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .dr1013map .map-label {
@@ -43,6 +46,9 @@
     height: 250px;
   }
 
+  .dr1013map .map-section {
+  max-width: 85%;
+}
   .dr1013map .map-label {
     font-size: 1.4rem;
   }
