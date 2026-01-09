@@ -1,0 +1,56 @@
+/* MODAL ROOT */
+.doc-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 2147483647; /* maximum safe */
+}
+
+/* OPEN STATE */
+.doc-modal.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BACKDROP */
+.doc-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+}
+
+/* CARD */
+.doc-modal-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 32px;
+  max-width: 520px;
+  width: min(92vw, 520px);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 40px 120px rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.doc-modal-card h3 {
+  color: #237A9B;
+}
+
+.doc-modal-card hr {
+  color: #fcb83a;
+  width: 90%;
+}
+
+/* CLOSE */
+.doc-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  border: none;
+  background: none;
+  font-size: 26px;
+  cursor: pointer;
+}

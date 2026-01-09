@@ -4,7 +4,7 @@
   min-height: 25dvh;
   perspective: 1000px;
   overflow: hidden;
-  background: #0e1a22; /* backdrop for letterboxing when using contain */
+  background: #fcb83a; /* backdrop for letterboxing when using contain */
 }
 
 .hero3d__scene {
@@ -19,7 +19,7 @@
 .hero3d__img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  object-fit: contain;          /* key change: show full image */
+  object-fit: ;          /* key change: show full image */
   object-position: center;      /* tweak if the subject is off-center */
   transform: translateZ(0);
 }

@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Arunodaya Multispeciality Hospital offers expert healthcare services including gynaecology, orthopedics, pediatrics, and emergency care in Srikakulam.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ARUNODAYA MULTISPECIALITY HOSPITAL | Best Hospital in Srikakulam</title>
+	<title>ARUNODAYA HOSPITAL | Best MultispecialityHospital in Srikakulam</title>
   <link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="shortcut icon" href="./assets/logo.png">
 	<link rel="stylesheet" href="./assets/css_dr1013.css">
@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="./assets/css_dr1013footer.css">
 	<link rel="stylesheet" href="./assets/css_dr1013installapp.css">
 	<link rel="stylesheet" href="./assets/css_dr1013loader.css">
+  <link rel="stylesheet" href="./assets/css/modal.css">
   <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-kidney-external-justicon-lineal-justicon-96.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link href="./assets/css2" rel="stylesheet">
@@ -59,14 +60,13 @@
   </head>
 
 <body class="dr1013" style="visibility: visible;">
-
 	<div class="dr1013loader">
 		<div id="loader" class="center" style="visibility: visible; display: none;"></div>
 	</div>
 
   <div id="header-placeholder"></div>
 
-	<div class="dr1013hero">
+	<!-- <div class="dr1013hero">
 		<section class="hero" id="home">
 			<div class="hero-content">
 				<h2>Your Health,</h2>
@@ -77,12 +77,12 @@
 				<a href="tel:+918942225549" class="cta-button">Book Appointment</a>
 			</div>
 		</section>
-	</div>
+	</div> -->
 
   <!-- <div class="hero3d" role="banner" aria-label="Arun Hospitality hero">
   <div class="hero3d__scene">
     <img
-      src="./assets/arunodaya-hospital-hero.jpg"
+      src="./assets/arunodaya-hospital-hero-final.png"
       alt="Arunodaya Multispeciality Hospital"
       class="hero3d__img"
       loading="eager"
@@ -96,6 +96,22 @@
     </div>
   </div>
 </div> -->
+
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>Your Health,</h2>
+    <h2>Our Priority</h2>
+    <a href="tel:+918942225549" class="hero-cta">
+      Book Appointment
+    </a>
+  </div>
+</section>
+
+
+
+
+
 
 	<div class="dr1013popup">
 		<div class="popup" id="popup" style="display: none;">
@@ -626,7 +642,7 @@
 
 				<!-- Doctor 3 -->
 				<div class="doctor-card">
-					<div class="badge">General Medicine</div>
+					<!-- <div class="badge">General Medicine</div> -->
 					<div class="doctor-photo">
 						<img class="doc3" src="./assets/Sahith-2.png" alt=""
 							loading="lazy">
@@ -973,7 +989,9 @@
 
 	<div class="dr1013map">
 		<div class="map-section" id="map">
-			<h2 class="map-label">Find Us on Google Maps</h2>
+			<h2 class="map-label">
+      <i class="fas fa-hospital"></i>  Find Us on Google Maps
+      </h2>
 			<div class="map-container">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.863803970622!2d83.88950437518652!3d18.307835582744925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c1561a616adf3%3A0x491be1c29cbe1f03!2sArunodaya%20Multi%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1747260730192!5m2!1sen!2sin"
@@ -1185,6 +1203,53 @@
 
 	<div id="footer-placeholder"></div>
 
+  <div class="doc-modal" id="docModal">
+    <div class="doc-modal-backdrop" onclick="closeDocModal()"></div>
+    <div class="doc-modal-card">
+      <button class="doc-modal-close" onclick="closeDocModal()">×</button>
+      <h3 id="docModalTitle"></h3>
+      <hr><br>
+      <p id="docModalContent"></p>
+    </div>
+  </div>
+
+  <!-- <div class="doc-modal" id="docModal">
+    <div class="doc-modal-backdrop" onclick="closeDocModal()"></div>
+    <div class="doc-modal-card">
+      <button class="doc-modal-close" onclick="closeDocModal()">×</button>
+      <h3 id="docModalTitle"></h3>
+      <p id="docModalContent"></p>
+    </div>
+  </div> -->
+<script>
+const tilt = document.querySelector(".building-tilt");
+
+let targetX = 0;
+let targetY = 0;
+let currentX = 0;
+let currentY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  const cx = window.innerWidth / 2;
+  const cy = window.innerHeight / 2;
+  targetX = ((e.clientX - cx) / cx) * 6;
+  targetY = ((cy - e.clientY) / cy) * 4;
+});
+function animate() {
+  currentX += (targetX - currentX) * 0.08;
+  currentY += (targetY - currentY) * 0.08;
+  tilt.style.transform = `
+    rotateY(${currentX}deg)
+    rotateX(${currentY}deg)
+  `;
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+
+
+  <script src="./assets/scripts/arunodaya-hospital-modal.js"></script>
   <script src="./assets/scripts/arunodaya-hospital-layout.js"></script>
 	<script src="./assets/js_file_dr1013blog.js"></script>
 	<script src="./assets/js_file_dr1013header.js"></script>

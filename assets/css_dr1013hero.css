@@ -1,123 +1,103 @@
-/* Hero Section Wrapper */
-.dr1013hero {
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden; /* Prevent vertical scroll glitch */
+:root {
+  --blue: #237A9B;
+  --gold: #FCB83A;
+
+  /* 🎯 Background tuning controls */
+  --hero-pos-x: 70%;
+  --hero-pos-y: 55%;
+  --hero-zoom: 108%;
+}
+
+/* HERO */
+.hero-section {
   position: relative;
-  /* background: #fcb83a; */
-  background-image: url(./hero_new.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 25dvh;
-  height: 65vh;
-  display: flex;
-  justify-content: end;
-  padding: 60px 30px;
-  box-sizing: border-box;
-  border-radius: 0px 0px 20px 20px;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  background: #f6f9fc;
+
+  background-image: url("./arunodaya-hospital-hero-final.png");
+  background-size: var(--hero-zoom);
+  background-position: var(--hero-pos-x) var(--hero-pos-y);
+  background-repeat: no-repeat;
 }
 
-/* Hero Container */
-.dr1013hero .hero-content {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 5rem 1rem;
-  border-radius: 15px;
-  text-align: right;
-  color: white;
-  background: transparent;
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
+/* GLASS / TEXTURE OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); */
-  animation: fadeInText 1.8s ease forwards;
+  /* backdrop-filter: blur(5px) saturate(112%);
+  -webkit-backdrop-filter: blur(5px) saturate(112%); */
+
+  background:
+    url("/assets/noise.png"),
+    linear-gradient(
+      290deg,
+      rgba(35,122,155,0.12),
+      rgba(255,255,255,0.9)
+    );
+  opacity: 0.9;
 }
 
-/* Hero Title */
-.dr1013hero .hero-content h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-  animation: slideInUp 1.5s ease forwards;
-  color: #237A9B;
-  -webkit-animation: slideInUp 1.5s ease forwards;
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-left: clamp(60px, 6vw, 140px);
 }
 
-/* Hero Paragraph */
-.dr1013hero .hero-content p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: 25px;
-  animation: fadeInText 2.2s ease forwards;
+.hero-content h2 {
+  font-size: clamp(48px, 6vw, 80px);
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #1c2b36;
 }
 
-/* CTA Button */
-.dr1013hero .cta-button {
-  background-color: #237A9B;
-  color: white;
-  margin-top: 15px;
-  padding: 14px 32px;
-  font-size: 1.15rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 76, 153, 0.6);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+.hero-content h2:last-of-type {
+  color: var(--blue);
+}
+
+/* CTA */
+.hero-cta {
   display: inline-block;
-  animation: fadeInText 2.5s ease forwards;
+  margin-top: 36px;
+  background: var(--blue);
+  color: #fff;
+  padding: 16px 34px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 18px 40px rgba(35,122,155,0.35);
+  transition: all 0.25s ease;
 }
 
-.dr1013hero .cta-button:hover {
-  background-color: #0066cc;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.8);
-  -webkit-transform: translateY(-3px);
-  -moz-transform: translateY(-3px);
-  -ms-transform: translateY(-3px);
-  -o-transform: translateY(-3px);
+.hero-cta:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
 }
 
-/* Animations */
-@keyframes fadeInText {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
 
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  .dr1013hero {
-    padding: 40px 15px;
+    /* mobile framing */
+    --hero-pos-x: 50%;
+    --hero-pos-y: 35%;
+    --hero-zoom: 120%;
   }
 
-  .dr1013hero .hero-content {
-    padding: 20px;
-    max-width: 95%;
-    width: 100%;
-    margin: 0 auto;
-    text-align: right;
-  }
-
-  .dr1013hero .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .dr1013hero .hero-content p {
-    font-size: 1.1rem;
-  }
-
-  .dr1013hero .cta-button {
-    padding: 12px 24px;
-    font-size: 1rem;
+  .hero-content {
+    padding-left: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    /* text-align: center; */
   }
 }
