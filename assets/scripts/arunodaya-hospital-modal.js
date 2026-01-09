@@ -1,3 +1,12 @@
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    const modal = document.getElementById("docModal");
+    if (modal && modal.classList.contains("is-open")) {
+      closeDocModal();
+    }
+  }
+});
+
 function openDocModal(title, content) {
   document.getElementById("docModalTitle").textContent = title;
   document.getElementById("docModalContent").textContent = content;
