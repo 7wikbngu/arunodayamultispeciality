@@ -268,6 +268,7 @@
   .dr1013header nav ul li {
     margin: 8px 0;
     text-align: center;
+    overflow-y: hidden;
   }
 
   .dr1013header nav ul li a {
@@ -276,5 +277,13 @@
     font-size: 1.05rem;
     white-space: normal;
     overflow-wrap: anywhere;
+  }
+}
+
+@media (max-height: 700px) {
+  .dr1013header nav ul li {
+    margin: 1px 0;
+    text-align: center;
+    overflow-y: hidden;
   }
 }
