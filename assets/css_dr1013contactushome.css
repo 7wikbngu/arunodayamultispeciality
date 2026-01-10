@@ -74,6 +74,7 @@
 	flex-direction: row;
 	gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .dr1013contactushome .info-box {
@@ -84,7 +85,7 @@
 	text-align: center;
 	box-shadow: 0 8px 16px rgba(13, 71, 161, 0.2);
   max-width: 300px;
-  min-width: 300px
+  width: 300px;
 }
 
 .dr1013contactushome .info-box i {
@@ -100,7 +101,6 @@
 	margin: 10px 0 5px;
 	font-size: 1.2rem;
 }
-
 
 .dr1013contactushome .info-box:hover h4 {
 	color: #fcb83a;

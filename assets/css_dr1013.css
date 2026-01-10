@@ -5,12 +5,36 @@
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
 	font-family: Lato,sans-serif;
 	background: #f8f9fa;
 	color: #333;
 	line-height: 1.6;
 	scroll-behavior: smooth;
+}
+
+.dr1013header,
+.dr1013header header,
+.header-container {
+  width: 100%;
+  max-width: 100%;
 }
 
 .dr1013 {

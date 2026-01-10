@@ -96,6 +96,7 @@
 		align-items: center;
 	}
 	.dr1013footer .footer-column {
+    flex: 1 1 45px;
 		text-align: center;
 	}
 	.dr1013footer .footer-logo {

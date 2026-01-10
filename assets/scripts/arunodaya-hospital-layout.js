@@ -22,4 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(err => console.error('Error loading footer:', err));
   }
+
+  // Load Floating Buttons
+  const floatingButtonsPlaceholder = document.getElementById('floating-buttons-placeholder');
+  if (floatingButtonsPlaceholder) {
+    fetch('floating-buttons.html')
+      .then(res => res.text())
+      .then(html => {
+        floatingButtonsPlaceholder.innerHTML = html;
+      })
+      .catch(err => console.error('Error loading floating buttons:', err));
+  }
 });

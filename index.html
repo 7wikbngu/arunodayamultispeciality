@@ -61,6 +61,13 @@
   "url": "https://www.arunodayahospital.com"
 }
 </script>
+<script>
+  [...document.querySelectorAll('*')].forEach(el => {
+  if (el.scrollWidth > el.clientWidth) {
+    el.style.outline = '2px solid red';
+  }
+});
+</script>
   </head>
 
 <body class="dr1013" style="visibility: visible;">
@@ -69,37 +76,6 @@
 	</div>
 
   <div id="header-placeholder"></div>
-
-	<!-- <div class="dr1013hero">
-		<section class="hero" id="home">
-			<div class="hero-content">
-				<h2>Your Health,</h2>
-				<h2>Our Priority</h2>
-				<p>Arunodaya Multi Speciality Hospital provides world-class
-					treatment with compassion, cutting-edge technology, and expert
-					doctors.</p>
-				<a href="tel:+918942225549" class="cta-button">Book Appointment</a>
-			</div>
-		</section>
-	</div> -->
-
-  <!-- <div class="hero3d" role="banner" aria-label="Arun Hospitality hero">
-  <div class="hero3d__scene">
-    <img
-      src="./assets/arunodaya-hospital-hero-final.png"
-      alt="Arunodaya Multispeciality Hospital"
-      class="hero3d__img"
-      loading="eager"
-      fetchpriority="high"
-    />
-    <div class="hero3d__overlay"></div>
-    <div class="hero3d__content">
-      <h2>Your Health,</h2>
-      <h2>Our Priority</h2>
-      <a href="tel:+918942225549" class="cta-button">Book Appointment</a>
-    </div>
-  </div>
-</div> -->
 
 <section class="hero-section">
   <div class="hero-overlay"></div>
@@ -145,12 +121,6 @@
 					ensure the well-being of every patient who walks through our doors.
 				</p>
 			</section>
-			<!-- <h3>Our Specialities</h3>
-				<p>We offer specialized care in a wide range of medical fields.
-					Each department is led by experienced professionals who are
-					dedicated to providing the highest quality treatment. Whether you
-					need a routine checkup or advanced medical intervention, we are
-					here to assist.</p> -->
 			<div class="specialities-grid">
 				<!-- Speciality Cards -->
 				<div class="speciality-card">
@@ -614,8 +584,6 @@
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc1()">More Info</button>
-						<!-- <a href="https://www.linkslake.com/rospdr/2/1013/page/about/bio/team/member.html#member1"
-							class="more-btn">More Info</a> -->
 					</div>
 				</div>
 
@@ -634,8 +602,6 @@
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc2()">More Info</button>
-						<!-- <a href="https://www.rosp.in/rospdr/2/1013/page/about/bio/team/member.html#member1"
-							class="more-btn">More Info</a> -->
 					</div>
 				</div>
 
@@ -654,8 +620,6 @@
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc3()">More Info</button>
-						<!-- <a href="https://www.rosp.in/rospdr/2/1013/page/about/bio/team/member.html#member1"
-							class="more-btn">More Info</a> -->
 					</div>
 				</div>
 
@@ -674,8 +638,6 @@
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc4()">More Info</button>
-						<!-- <a href="https://www.linkslake.com/rospdr/2/1013/page/about/bio/team/member.html#member4"
-							class="more-btn">More Info</a> -->
 					</div>
 
 				</div>
@@ -687,15 +649,13 @@
 						<img class="doc5" src="./assets/ortho.png" alt="" loading="lazy">
 					</div>
 					<div class="doctor-info">
-						<h3>Dr. N. Aditya Sekhar</h3>
-						<div class="qual">MD (Ortho), DNB Ortho, FISS</div>
+						<h3></h3>
+						<div class="qual"></div>
 						<div class="role">Consultant Orthopedician</div>
 						<div class="dept">Bone &amp; Joint Specialist</div>
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc5()">More Info</button>
-						<a href="https://www.linkslake.com/rospdr/2/1013/page/about/bio/team/member.html#member4"
-							class="more-btn">More Info</a>
 					</div>
 				</div> -->
 
@@ -713,8 +673,6 @@
 					</div>
 					<div class="doctor-more">
 						<button class="more-btn" onclick="infoDoc6()">More Info</button>
-						<!-- <a href="https://www.linkslake.com/rospdr/2/1013/page/about/bio/team/member.html#member4"
-							class="more-btn">More Info</a> -->
 					</div>
 				</div>
 
@@ -915,52 +873,6 @@
 		<section class="contact-section" id="contactushome">
 			<h2>Contact Us</h2>
 			<div class="contact-wrapper">
-				<!-- Form -->
-				<!-- <div class="form-container">
-					<form name="contactform" class="contact-form"
-						action="https://www.linkslake.com/hub/arunodayahospital#" method="post">
-						<input type="hidden" name="ROSP_WEB_ACTION" value="ajax"> <input type="hidden"
-							name="ROSP_WEB_ACTION_SUB" value="contactform">
-						<input type="hidden" name="ROSP_WEB_ACTION_SUB_actions" value="create_ticket,send_email"> <input
-							type="hidden" name="refId" value="rp1:sp1:pl1:sh3"> <input type="hidden" name="email_from"
-							value="admin@rosp.in"> <input type="hidden" name="email_to" value=""> <input type="hidden"
-							name="email_subject_prefix" value="ContactForm"> <input type="hidden"
-							name="email_body_part1"
-							value="&lt;html&gt;&lt;body&gt;&lt;p&gt;Hello,&lt;/p&gt;&lt;p&gt;a new lead has been received.&lt;/p&gt;&lt;p&gt;Please find the details below.&lt;/p&gt;">
-						<input type="hidden" name="email_body_part3"
-							value="&lt;p&gt;Best Regards,&lt;/p&gt;&lt;p&gt;ROSP&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;">
-
-						<div>
-							<label>Name:</label> <input type="text" name="user_userDetail_address_name"
-								pattern="[A-Za-z0-9-_@.#(), ]{1,100}" placeholder="Your name" maxlength="100"
-								required="" autocomplete="off">
-						</div>
-						<div>
-							<label>Phone:</label> <input type="text"
-								name="user_userDetail_address_phoneNumber_ten_without_isd" pattern="[0-9]{10}"
-								placeholder="Your 10 digit phone" maxlength="10" required="" autocomplete="off">
-						</div>
-						<div>
-							<label>Email:</label> <input type="email" name="user_userDetail_address_emailId"
-								placeholder="Your email" maxlength="100" required="" autocomplete="off">
-						</div>
-						<div>
-							<label>Subject:</label> <input type="text" name="email_subject"
-								pattern="[A-Za-z0-9-_@.#(), ]{1,100}" placeholder="Subject" maxlength="100" required=""
-								autocomplete="off">
-						</div>
-						<div>
-							<label>Message:</label>
-							<textarea name="ticketmessage_remark" placeholder="Could you write something"
-								maxlength="500" required=""></textarea>
-						</div>
-
-						<button class="sendmsg-btn"
-							onclick="ajaxCreateTicket(&#39;contactform&#39;,&#39;https://www.rosp.in:447/rospws/rd?&#39;); return false;">Send
-							Message</button>
-					</form>
-				</div> -->
-
 				<!-- Contact Info -->
 				<div class="info-container">
 					<div class="info-box">
@@ -968,13 +880,6 @@
 						<h4>Phone</h4>
 						<p>+91 89422 25549</p>
 					</div>
-					<!--
-					<div class="info-box">
-						<i class="fas fa-envelope"></i>
-						<h4>Email</h4>
-						<p>info@citycarehospital.com</p>
-					</div>
-					-->
 					<div class="info-box">
 						<i class="fas fa-map-marker-alt"></i>
 						<h4>Address</h4>
@@ -1177,28 +1082,7 @@
 		</section>
 	</div> -->
 
-	<div class="dr1013floatingbuttons">
-		<div class="floating-buttons">
-			<!-- Call Now Button -->
-			<a href="tel:918125436093" class="fab-btn call" title="Call Now">
-				<i class="fas fa-phone-alt"></i>
-			</a>
-			<!-- WhatsApp Chat Button -->
-			<a href="https://wa.me/918125436093?text=Hello%20Arunodaya%20Multi%20Speciality%20Hospital,%20I%20would%20like%20to%20have%20a%20discussion%20with%20your%20team."
-				target="_blank" class="fab-btn whatsapp-chat" title="WhatsApp Chat">
-				<i class="fab fa-whatsapp"></i>
-			</a>
-			<!-- WhatsApp Share Button -->
-			<a href="https://wa.me/?text=Check%20out%20Arunodaya%20Multi%20Speciality%20Hospital%20and%20more%20"
-				target="_blank" class="fab-btn whatsapp-share" title="Share on WhatsApp"> <i
-					class="fas fa-share-alt"></i>
-			</a>
-			<!-- Back to Top Button -->
-			<a href="javascript:void(0)" class="fab-btn top" title="Back to Top" onclick="scrollToTop()"> <i
-					class="fas fa-arrow-up"></i>
-			</a>
-		</div>
-	</div>
+	<div id="floating-buttons-placeholder"></div>
 
 	<div id="footer-placeholder"></div>
 
@@ -1220,33 +1104,6 @@
       <p id="docModalContent"></p>
     </div>
   </div> -->
-<script>
-const tilt = document.querySelector(".building-tilt");
-
-let targetX = 0;
-let targetY = 0;
-let currentX = 0;
-let currentY = 0;
-
-document.addEventListener("mousemove", (e) => {
-  const cx = window.innerWidth / 2;
-  const cy = window.innerHeight / 2;
-  targetX = ((e.clientX - cx) / cx) * 6;
-  targetY = ((cy - e.clientY) / cy) * 4;
-});
-function animate() {
-  currentX += (targetX - currentX) * 0.08;
-  currentY += (targetY - currentY) * 0.08;
-  tilt.style.transform = `
-    rotateY(${currentX}deg)
-    rotateX(${currentY}deg)
-  `;
-  requestAnimationFrame(animate);
-}
-animate();
-</script>
-
-
 
   <script src="./assets/scripts/arunodaya-hospital-modal.js"></script>
   <script src="./assets/scripts/arunodaya-hospital-layout.js"></script>
