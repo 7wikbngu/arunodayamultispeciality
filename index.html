@@ -48,7 +48,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Hospital",
-  "name": "Arunodaya Multispeciality Hospital",
+  "name": "Arunodaya Multi Speciality Hospital",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Govt. Arts College Road, Shanti Nagar, Balaga",
@@ -60,24 +60,18 @@
   "telephone": "08942225549",
   "url": "https://www.arunodayahospital.com"
 }
-</script>
-<script>
-  [...document.querySelectorAll('*')].forEach(el => {
-  if (el.scrollWidth > el.clientWidth) {
-    el.style.outline = '2px solid red';
-  }
-});
-</script>
-  </head>
+  </script>
+</head>
 
 <body class="dr1013" style="visibility: visible;">
-	<div class="dr1013loader">
+  <div id="header-placeholder"></div>
+  <div id="nav-overlay"></div>
+	<div class="page-pusher">
+  <div class="dr1013loader">
 		<div id="loader" class="center" style="visibility: visible; display: none;"></div>
 	</div>
 
-  <div id="header-placeholder"></div>
-
-<section class="hero-section">
+<section class="hero-section lazy-section">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h2>Your Health,</h2>
@@ -88,7 +82,7 @@
   </div>
 </section>
 
-	<div class="dr1013popup">
+	<div class="dr1013popup lazy-section">
 		<div class="popup" id="popup" style="display: none;">
 			<div class="popup-content">
 				<span class="close" id="popupClose">×</span>
@@ -105,16 +99,10 @@
 		</div>
 	</div>
 
-	<div class="dr1013installapp">
-		<div id="installbtnwrapper" class="installbtnwrapper">
-			<button id="installbtn" class="installbtn">Install App</button>
-		</div>
-	</div>
-
 	<div class="dr1013speciality">
 		<div class="container" id="speciality">
-			<section class="hospital-intro">
-				<h1>Welcome to Arunodaya Multispeciality Hospital</h1>
+			<section class="hospital-intro lazy-section">
+				<h1>Welcome to Arunodaya Multi Speciality Hospital</h1>
 				<p>Our hospital is committed to providing exceptional healthcare
 					across a range of medical specialties. With a team of highly
 					skilled doctors and state-of-the-art facilities, we are here to
@@ -123,21 +111,21 @@
 			</section>
 			<div class="specialities-grid">
 				<!-- Speciality Cards -->
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-baby"></i>
 					<h3>Obstetrics &amp; Gynaecology</h3>
 					<p>We offer expert care in maternity, pregnancy, childbirth,
 						and female reproductive health.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-syringe yellow"></i>
 					<h3 class="yellow">Infertility (IUI/IVF)</h3>
 					<p>Advanced fertility treatments like IUI and IVF for couples
 						facing challenges in conception.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-child"></i>
 					<h3>Pediatrics (Neonatal &amp; General)</h3>
 					<p>Providing healthcare services for infants, children, and
@@ -151,69 +139,69 @@
 						including cataracts, glaucoma, and more.</p>
 				</div> -->
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-toilet"></i>
 					<h3>Urology</h3>
 					<p>Expert care for urinary tract disorders, kidney health, and
 						male reproductive issues.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-brain"></i>
 					<h3>Neurosurgery</h3>
 					<p>Comprehensive treatment for brain, spinal cord, and nervous
 						system conditions.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-heartbeat"></i>
 					<h3>Neuro Medicine</h3>
 					<p>Specialized care for neurological diseases and disorders,
 						including stroke and epilepsy.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<img class="fas fa-spinal-cord" src="./assets/spine.png" />
 					<h3>Spine Surgery</h3>
 					<p>Advanced treatment for spinal conditions such as disc
 						problems, fractures, and deformities.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-stethoscope"></i>
 					<h3>Gastroenterology</h3>
 					<p>Expert care for digestive system disorders, including IBS,
 						acid reflux, and liver diseases.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-bone"></i>
 					<h3>Orthopedics</h3>
 					<p>Comprehensive musculoskeletal care, including bone
 						fractures, joint issues, and arthritis.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-user-md"></i>
 					<h3>General Medicine</h3>
 					<p>Primary care services for overall health, prevention, and
 						management of chronic conditions.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-cut"></i>
 					<h3>General Surgery</h3>
 					<p>Expert surgical interventions for various conditions,
 						including appendicitis, hernia, and more.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-x-ray"></i>
 					<h3>Radiology</h3>
 					<p>Advanced diagnostic imaging for accurate diagnoses and X-rays.</p>
 				</div>
 
-				<div class="speciality-card">
+				<div class="speciality-card lazy-section">
 					<i class="fas fa-wheelchair"></i>
 					<h3>Joint Replacement Surgeries</h3>
 					<p>Comprehensive care for joint replacement surgeries including
@@ -225,15 +213,15 @@
 
 	<div class="dr1013whychooseushome">
 		<div class="container" id="whychooseushome">
-			<section class="why-choose-us-intro">
+			<section class="why-choose-us-intro lazy-section">
 				<h2>Why Choose Us?</h2>
-				<p>We are a multi-speciality hospital dedicated to providing the
+				<p>We are a multi speciality hospital dedicated to providing the
 					best care for our patients. Here are just a few reasons why you
 					should choose us for your healthcare needs.</p>
 			</section>
 
 			<div class="why-choose-us-grid">
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-user-md"></i>
 					<h3>Experienced Medical Professionals</h3>
 					<p>Our hospital is staffed with highly qualified doctors,
@@ -241,7 +229,7 @@
 						exceptional care.</p>
 				</div>
 
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-hospital"></i>
 					<h3>State-of-the-Art Facilities</h3>
 					<p>We use the latest medical technologies and equipment to
@@ -249,7 +237,7 @@
 						patients.</p>
 				</div>
 
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-heartbeat"></i>
 					<h3>Comprehensive Care</h3>
 					<p>From routine checkups to specialized treatments, we provide
@@ -257,7 +245,7 @@
 						every patient.</p>
 				</div>
 
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-shield-alt"></i>
 					<h3>Patient Safety First</h3>
 					<p>Your health and safety are our top priority. We follow
@@ -265,14 +253,14 @@
 						safe and effective.</p>
 				</div>
 
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-clock"></i>
 					<h3>24/7 Emergency Services</h3>
 					<p>We offer round-the-clock emergency services, so you can rely
 						on us for immediate and urgent care whenever you need it.</p>
 				</div>
 
-				<div class="why-card">
+				<div class="why-card lazy-section">
 					<i class="fas fa-comments"></i>
 					<h3>Personalized Patient Care</h3>
 					<p>We understand that every patient is unique. Our medical team
@@ -290,67 +278,67 @@
 				provide the best care possible.</p>
 
 			<div class="facility-grid">
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-prescription-bottle-alt"></i>
 					<h4>In-House Pharmacy</h4>
 					<p>Full-service pharmacy for easy medication access.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-vials"></i>
 					<h4>In-House Laboratory</h4>
 					<p>Precision lab testing with fast turnaround.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-procedures"></i>
 					<h4>Equipped ICU</h4>
 					<p>Monitors &amp; ventilators in a fully functional ICU.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-baby"></i>
 					<h4>Labour Room (AC)</h4>
 					<p>Comfortable, air-conditioned labor &amp; delivery suite.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-bed-pulse"></i>
 					<h4>Laminar Operation Theatre</h4>
 					<p>Ultra-clean, high-standard surgical environments.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-microscope"></i>
 					<h4>Laparoscopy (Karl Storz)</h4>
 					<p>High-end minimally invasive surgical tools.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-stethoscope"></i>
 					<h4>Hysteroscopy &amp; C-ARM</h4>
 					<p>Advanced diagnostic &amp; imaging machines.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-heartbeat"></i>
 					<h4>GE Voluson PB Ultrasound</h4>
 					<p>Precision imaging for accurate diagnostics.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-hospital-user"></i>
 					<h4>Spacious Rooms</h4>
 					<p>Choose from AC, Non-AC, and luxury suites.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-wave-square"></i>
 					<h4>CTG &amp; ECG</h4>
 					<p>Heart and fetal monitoring systems.</p>
 				</div>
 
-				<div class="facility-card">
+				<div class="facility-card lazy-section">
 					<i class="fas fa-x-ray"></i>
 					<h4>X-Ray 100 MA</h4>
 					<p>High-definition X-ray imaging with clarity.</p>
@@ -367,40 +355,40 @@
 				children.</p>
 
 			<div class="icu-grid">
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-thermometer-quarter"></i>
 					<h4>Warmers</h4>
 					<p>State-of-the-art warmers for critical care and temperature
 						regulation.</p>
 				</div>
 
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-sun"></i>
 					<h4>Phototherapy Units</h4>
 					<p>Advanced phototherapy units to treat neonatal jaundice.</p>
 				</div>
 
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-lungs"></i>
 					<h4>CPAP</h4>
 					<p>Continuous Positive Airway Pressure for respiratory support.</p>
 				</div>
 
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-hospital-user"></i>
 					<h4>HFNC</h4>
 					<p>High Flow Nasal Cannula to deliver oxygen at a high flow
 						rate.</p>
 				</div>
 
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-oxygen"></i>
 					<h4>Ventilator</h4>
 					<p>High-tech ventilators for life-saving respiratory
 						assistance.</p>
 				</div>
 
-				<div class="icu-card">
+				<div class="icu-card lazy-section">
 					<i class="fas fa-gas-pump"></i>
 					<h4>Central Oxygen with Air Compressor</h4>
 					<p>Reliable, 24/7 oxygen supply supported by air compressors.</p>
@@ -417,7 +405,7 @@
 				employees in key specialties.</p>
 			<div class="schemes-cards">
 				<!-- Obstetrics & Gynaecology -->
-				<div class="scheme-card">
+				<div class="scheme-card lazy-section">
 					<i class="fas fa-baby"></i>
 					<h4>Obstetrics &amp; Gynaecology</h4>
 					<p>Comprehensive maternal and women’s healthcare, including
@@ -425,7 +413,7 @@
 				</div>
 
 				<!-- Urology -->
-				<div class="scheme-card">
+				<div class="scheme-card lazy-section">
 					<i class="fas fa-toilet-paper"></i>
 					<h4>Urology</h4>
 					<p>Expert care for urinary tract and kidney health, including
@@ -433,7 +421,7 @@
 				</div>
 
 				<!-- General Surgery -->
-				<div class="scheme-card">
+				<div class="scheme-card lazy-section">
 					<i class="fas fa-cut"></i>
 					<h4>General Surgery</h4>
 					<p>Effective surgical solutions for a wide range of conditions,
@@ -441,7 +429,7 @@
 				</div>
 
 				<!-- Nephrology -->
-				<div class="scheme-card">
+				<div class="scheme-card lazy-section">
 					<!-- <i class="fas fa-kidneys"></i> -->
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48" class="scheme-card-icon">
   <title>Kidneys SVG Icon</title>
@@ -455,7 +443,7 @@
 				</div>
 
 				<!-- Orthopedics -->
-				<div class="scheme-card">
+				<div class="scheme-card lazy-section">
 					<i class="fas fa-bone"></i>
 					<h4>Orthopedics</h4>
 					<p>Specialized care for bones, joints, and muscles, ensuring
@@ -475,102 +463,102 @@
 				patients receive the best health coverage.</p>
 
 			<div class="partners-logos">
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/1(1).png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/2.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/3.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/4.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/5.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/6.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/7.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/8.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/9.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/10.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/11.png" alt="" loading="lazy">
 				</div>
-				<div class="partner-logo">
+				<div class="partner-logo lazy-section">
 					<img src="./assets/12.png" alt="" loading="lazy">
 				</div>
 			</div>
 		</section>
 	</div>
 
-	<div class="dr1013insuranceprivate">
+	<div class="dr1013insuranceprivate lazy-section">
 		<section class="private-insurances" id="private-insurances">
 			<h2>Our Private Insurance Partners</h2>
 			<p>We partner with top private insurance providers to offer
 				seamless health coverage for our patients.</p>
 
 			<div class="insurance-logos">
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/1(2).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/2(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/3(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/4(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/5(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/6(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/7(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/8(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img class="enlarge" src="./assets/9(1).png" alt=""
 						loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img class="enlarge" src="./assets/10(1).png" alt=""
 						loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/11(1).png" alt="" loading="lazy">
 				</div>
-				<div class="insurance-logo">
+				<div class="insurance-logo lazy-section">
 					<img src="./assets/12(1).png" alt="" loading="lazy">
 				</div>
 			</div>
 		</section>
 	</div>
 
-	<div class="dr1013doctor">
+	<div class="dr1013doctor lazy-section">
 		<section id="doctor">
 			<h2>Meet Our Doctors</h2>
 			<div class="doctors-grid">
 
 				<!-- Doctor 1 -->
-				<div class="doctor-card">
+				<div class="doctor-card lazy-section">
 					<div class="badge">Gynaecology</div>
 					<div class="doctor-photo">
 						<img class="doc1" src="./assets/doc-gyn.png" alt=""
@@ -588,7 +576,7 @@
 				</div>
 
 				<!-- Repeat for other doctors -->
-				<div class="doctor-card">
+				<div class="doctor-card lazy-section">
 					<div class="badge">Ophthalmology</div>
 					<div class="doctor-photo">
 						<img class="doc2" src="./assets/Ophthal-1.png" alt=""
@@ -606,7 +594,7 @@
 				</div>
 
 				<!-- Doctor 3 -->
-				<div class="doctor-card">
+				<div class="doctor-card lazy-section">
 					<!-- <div class="badge">General Medicine</div> -->
 					<div class="doctor-photo">
 						<img class="doc3" src="./assets/Sahith-2.png" alt=""
@@ -624,7 +612,7 @@
 				</div>
 
 				<!-- Doctor 4 -->
-				<div class="doctor-card">
+				<div class="doctor-card lazy-section">
 					<div class="badge">Paediatrics</div>
 					<div class="doctor-photo">
 						<img class="doc4" src="./assets/Paeds-1.png" alt=""
@@ -643,7 +631,7 @@
 				</div>
 
 				<!-- Doctor 5 -->
-				<!-- <div class="doctor-card">
+				<!-- <div class="doctor-card lazy-section">
 					<div class="badge">Orthopaedics</div>
 					<div class="doctor-photo">
 						<img class="doc5" src="./assets/ortho.png" alt="" loading="lazy">
@@ -660,7 +648,7 @@
 				</div> -->
 
 				<!-- Doctor 6 -->
-				<div class="doctor-card">
+				<div class="doctor-card lazy-section">
 					<div class="badge">Urology</div>
 					<div class="doctor-photo">
 						<img src="./assets/urol.png" alt="" loading="lazy">
@@ -681,7 +669,7 @@
 	</div>
 
 	<div class="dr1013appointment">
-		<section class="trauma-care-section" id="appointment">
+		<section class="trauma-care-section lazy-section" id="appointment">
 			<h2>24/7 Trauma Care &amp; Round-the-Clock Services</h2>
 			<p>Our hospital provides emergency trauma care and 24/7 services
 				to ensure that medical assistance is always available when needed
@@ -689,7 +677,7 @@
 
 			<div class="contact-info">
 				<!-- Contact for Trauma Care -->
-				<div class="contact-card">
+				<div class="contact-card lazy-section">
 					<i class="fas fa-phone-alt"></i>
 					<h4>Emergency Contact</h4>
 					<p>For immediate assistance</p>
@@ -699,7 +687,7 @@
 				</div>
 
 				<!-- Contact for Appointment -->
-				<div class="contact-card">
+				<div class="contact-card lazy-section">
 					<i class="fas fa-calendar-check"></i>
 					<h4>Book an Appointment</h4>
 					<p>For scheduled consultations</p>
@@ -869,18 +857,18 @@
 		</section>
 	</div> -->
 
-	<div class="dr1013contactushome">
+	<div class="dr1013contactushome lazy-section">
 		<section class="contact-section" id="contactushome">
 			<h2>Contact Us</h2>
 			<div class="contact-wrapper">
 				<!-- Contact Info -->
 				<div class="info-container">
-					<div class="info-box">
+					<div class="info-box lazy-section">
 						<i class="fas fa-phone-alt"></i>
 						<h4>Phone</h4>
 						<p>+91 89422 25549</p>
 					</div>
-					<div class="info-box">
+					<div class="info-box lazy-section">
 						<i class="fas fa-map-marker-alt"></i>
 						<h4>Address</h4>
 						<p>Arunodaya Multi Speciality Hospital, Art's College Road,
@@ -897,7 +885,7 @@
       <i class="fas fa-hospital"></i>  Find Us on Google Maps
       </h2>
 			<div class="map-container">
-				<iframe
+				<iframe loading="lazy"
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.863803970622!2d83.88950437518652!3d18.307835582744925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c1561a616adf3%3A0x491be1c29cbe1f03!2sArunodaya%20Multi%20Speciality%20Hospital!5e0!3m2!1sen!2sin!4v1747260730192!5m2!1sen!2sin"
 					width="100%" height="450px" style="border: 0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -906,7 +894,7 @@
 	</div>
 
 	<div class="dr1013gallery">
-		<div class="gallery-container" id="gallery">
+		<div class="gallery-container lazy-section" id="gallery">
 			<h2 class="gallery-label">Health Insights: A Collection of
 				Disease Gallery</h2>
 			<div class="gallery-track" id="galleryTrack" style="transform: translateX(-2400%);">
@@ -1082,9 +1070,9 @@
 		</section>
 	</div> -->
 
-	<div id="floating-buttons-placeholder"></div>
+	<div id="floating-buttons-placeholder" class="lazy-section"></div>
 
-	<div id="footer-placeholder"></div>
+	<div id="footer-placeholder" class="lazy-section"></div>
 
   <div class="doc-modal" id="docModal">
     <div class="doc-modal-backdrop" onclick="closeDocModal()"></div>
@@ -1095,6 +1083,7 @@
       <p id="docModalContent"></p>
     </div>
   </div>
+  </div>
 
   <!-- <div class="doc-modal" id="docModal">
     <div class="doc-modal-backdrop" onclick="closeDocModal()"></div>
@@ -1104,14 +1093,11 @@
       <p id="docModalContent"></p>
     </div>
   </div> -->
-
   <script src="./assets/scripts/arunodaya-hospital-modal.js"></script>
   <script src="./assets/scripts/arunodaya-hospital-layout.js"></script>
 	<script src="./assets/js_file_dr1013blog.js"></script>
-	<script src="./assets/js_file_dr1013header.js"></script>
 	<script src="./assets/js_file_dr1013popup.js"></script>
 	<script src="./assets/js_file_dr1013gallery.js"></script>
-	<script src="./assets/js_file_dr1013floatingbuttons.js"></script>
 	<script src="./assets/js_file_dr1013installapp.js"></script>
 	<script src="./assets/js_file_loader.js"></script>
   <script src="./assets/js_hero.js"></script>

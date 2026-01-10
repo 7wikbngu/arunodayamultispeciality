@@ -1,184 +1,280 @@
-/* Header Section */
-.dr1013header {
-	margin: 0;
-	padding: 0;
-}
-.dr1013header .header-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 120px;
+/* ============================
+   Global Safety
+============================ */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.dr1013header .top-row {
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	gap: 10px;
+.no-scroll {
+  overflow: hidden;
+}
+
+.dr1013header nav *,
+.dr1013header nav ul,
+.dr1013header nav li,
+.dr1013header nav a {
+  position: relative !important;
+}
+
+/* ============================
+   Header Wrapper
+============================ */
+.dr1013header {
+  margin: 0;
+  padding: 0;
 }
 
 .dr1013header header {
-	background: #fefefe;
-	color: #237A9B;
-	position: sticky;
-  padding: 3px;
-	top: 0;
-	z-index: 1000;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10001;
+  background: #ffffff;
+  color: #237A9B;
+  padding: 4px 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+/* ============================
+   Layout
+============================ */
+.dr1013header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 88px;
+  height: auto;
+  width: 100%;
+}
+
+.dr1013header .top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* ============================
+   Logo
+============================ */
+.dr1013header .logo {
+  flex-shrink: 0;
 }
 
 .dr1013header .logo img {
-	width: 150px;
-	height: 100px;
-	/* display: block; */
-	margin: 15px 20px;
-	/* border-image-width: 15px 40px; */
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  margin: 8px 8px 0px 8px;
 }
 
-/* .dr1013header .header-container {
-	max-width: 100%;
-	margin: auto;
-	padding: 0.3rem 1rem; /* Reduced padding */
-/* } */ */
-
-
-.dr1013header .header-title {
-	font-size: 1.4rem;
-	font-weight: 700;
-	margin: 0;
-	text-transform: uppercase;
-}
-
-.dr1013header .header-subtitle {
-	font-size: 0.9rem;
-	margin-top: 2px;
-	font-weight: 500;
-	text-transform: capitalize;
-	letter-spacing: 0.3px;
-}
-
-.dr1013header .menu-toggle-container {
-	align-self: center;
-}
-
-.dr1013header .menu-toggle {
-	display: none;
-	font-size: 2rem;
-	color: #237A9B;
-	cursor: pointer;
-	margin-right: 20px;
-}
-
+/* ============================
+   Desktop Nav
+============================ */
 .dr1013header nav {
-	/* margin-left: auto; */
-    align-items: center;
-	align-self: center;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
 }
 
 .dr1013header nav ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
 }
 
 .dr1013header nav ul li a {
-	color: #237A9B;
-	text-decoration: none;
-	font-weight: 500;
-	padding: 6px 10px;
-	transition: background 0.2s ease;
-	font-size: 0.95rem;
-	border-radius: 4px;
-  margin: auto;
-	-webkit-transition: background 0.2s ease;
-	-moz-transition: background 0.2s ease;
-	-ms-transition: background 0.2s ease;
-	-o-transition: background 0.2s ease;
+  position: relative;
+  text-decoration: none;
+  color: #237A9B;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .dr1013header nav ul li a:hover {
-	background-color: #f4f8fd;
-	border-radius: 5px;
-	color: #fcb83a;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+  background-color: #f4f8fd;
+  color: #fcb83a;
 }
 
-.st-effect-1.st-menu {
-	visibility: visible;
-	-webkit-transform: translate3d(-100%, 0, 0);
-	transform: translate3d(-100%, 0, 0);
+.dr1013header nav ul li a.active {
+  color: #fcb83a;
+  font-weight: 600;
 }
 
-.st-effect-1.st-menu-open .st-effect-1.st-menu {
-	visibility: visible;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
+/* underline animation */
+.dr1013header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #fcb83a;
+  transition: width 0.25s ease;
 }
 
-.st-effect-1.st-menu::after {
-	display: none;
+.dr1013header nav ul li a:hover::after {
+  width: 100%;
 }
 
-/* Mobile View */
-@media ( max-width : 632px) {
-	.dr1013header .top-row {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.dr1013header .menu-toggle {
-		display: block;
-        cursor: pointer;
-        font-size: 2rem;
-        margin-right: 20px;
-        z-index: 10001;
-        position: relative;
-	}
+/* CTA button */
+.dr1013header nav ul li a[href*="appointment"] {
+  background: #fcb83a;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
 
-	.dr1013header nav {
+.dr1013header nav ul li a[href*="appointment"]:hover {
+  background: #1a5f7a;
+}
+
+/* ============================
+  Hamburger Button
+============================ */
+.menu-toggle-container {
+  flex-shrink: 0;
+  margin-left: auto;   /* pushes it to the far right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  display: none; /* hide on desktop */
+  width: 35px;
+  height: 14px;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+/* Hamburger lines */
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  margin: -2px;
+  width: 100%;
+  background-color: #237A9B;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+/* Open state → X animation */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ============================
+   Overlay
+============================ */
+#nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
+}
+
+#nav-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ============================
+  Mobile Styles
+============================ */
+@media (min-width: 633px) {
+  .dr1013header nav {
+    margin-left: 40px; /* space between logo and first nav item */
+  }
+
+  .dr1013header nav ul {
+    gap: 20px; /* space between nav items (already present, tweak if needed) */
+  }
+}
+
+@media (max-width: 632px) {
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Mobile nav */
+  .dr1013header nav {
+    display: block;
     position: fixed;
-        top: 0;
-        right: -260px;
-        width: 240px;
-        height: 100vh;
-        background: #FEFEFE;
-        box-shadow: -4px 0 20px rgba(0,0,0,0.15);
-        display: flex;
-        flex-direction: column;
-        padding-top: 80px;
-        transition: right 0.35s ease;
-        z-index: 10000;
-	}
+    top: 0;
+    right: 0;
+    width: min(85vw, 280px);
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+    padding: 72px 12px 12px;
 
-	.dr1013header nav ul {
-		display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding-left: 16px;
-        max-height: 80vh;
-        overflow-y: auto;
-	}
+    transform: translate3d(100%, 0, 0); /* off-screen */
+    opacity: 0;
+    transition: transform 0.35s ease;
 
-	.dr1013header nav.show {
-		right: 0;
-	}
-	.dr1013header nav ul.show {
-		display: flex;
-        max-height: 60vh;
-        overflow-y: auto;
-		z-index: 1000;
-	}
-	.dr1013header nav ul li {
-		padding: 10px 0;
-		/* border-bottom: 1px solid #066; */
-	}
-	.dr1013header nav ul li:last-child {
-		border-bottom: none;
-	}
+    overflow: hidden;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 10000;
+  }
+
+  .dr1013header nav.show {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .dr1013header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dr1013header nav ul li {
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .dr1013header nav ul li a {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 1.05rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }

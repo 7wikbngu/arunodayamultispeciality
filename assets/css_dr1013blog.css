@@ -102,6 +102,7 @@
 .dr1013blog .modal {
 	display: none;
 	position: fixed;
+transform: translateZ(0);
 	z-index: 10;
 	left: 0;
 	top: 0;
