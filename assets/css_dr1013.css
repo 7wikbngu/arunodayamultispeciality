@@ -74,10 +74,7 @@ body.menu-open .page-pusher {
 .lazy-section {
   opacity: 0;
   transform: translate3d(0, 24px, 0) scale(0.98);
-  transition:
-    opacity 650ms ease,
-    transform 650ms cubic-bezier(.2,.8,.2,1),
-    filter 650ms ease;
+  transition:    opacity 650ms ease,    transform 650ms cubic-bezier(.2,.8,.2,1),    filter 650ms ease;
   will-change: opacity, transform, filter;
   will-change: transform, opacity;
   contain: content;
@@ -86,10 +83,27 @@ body.menu-open .page-pusher {
   -ms-transform: translate3d(0, 24px, 0) scale(0.98);
   -o-transform: translate3d(0, 24px, 0) scale(0.98);
   -webkit-filter: blur(2px);
-  -webkit-transition: opacity 420ms ease-out, transform 420ms ease-out;
-  -moz-transition: opacity 420ms ease-out, transform 420ms ease-out;
-  -ms-transition: opacity 420ms ease-out, transform 420ms ease-out;
-  -o-transition: opacity 420ms ease-out, transform 420ms ease-out;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+
+/* Direction offsets */
+.reveal-left {
+  transform: translate3d(-60px, 0, 0) scale(0.98);
+}
+
+.reveal-right {
+  transform: translate3d(60px, 0, 0) scale(0.98);
+}
+
+.reveal-up {
+  transform: translate3d(0, 60px, 0) scale(0.98);
+}
+
+.reveal-zoom {
+  transform: scale(0.92);
 }
 
 .lazy-section.is-visible {

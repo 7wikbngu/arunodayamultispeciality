@@ -1,9 +1,7 @@
-// layout.js  ✅ SINGLE SOURCE OF TRUTH
-
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===============================
-     Load Layout Partials
+  Load Layout Partials
   ================================ */
 
   loadPartial("header-placeholder", "header.html");
@@ -13,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* ===============================
-   Load HTML Partials Helper
+  Load HTML Partials Helper
 ================================ */
 
 function loadPartial(placeholderId, file) {
@@ -25,16 +23,19 @@ function loadPartial(placeholderId, file) {
     .then(html => {
       el.innerHTML = html;
 
-      // ✅ Initialize navbar ONLY after header loads
+      //Initialize navbar ONLY after header loads
       if (placeholderId === "header-placeholder") {
         initNavbar();
       }
+      el.querySelectorAll(".lazy-section").forEach(section => {
+        lazyObserver.observe(section);
+      });
     })
     .catch(err => console.error(`Error loading ${file}:`, err));
 }
 
 /* ===============================
-   Navbar Controller
+  Navbar Controller
 ================================ */
 
 function initNavbar() {
@@ -101,22 +102,24 @@ function initNavbar() {
 // Optimized Lazy Section Observer
 // ===============================
 
+let lazyIndex = 0;
+
 const lazyObserver = new IntersectionObserver(
   (entries) => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        const el = entry.target
-        // Small stagger delay (0–180ms)
-        const delay = Math.min(index * 60, 180);
-        el.style.transitionDelay = `${delay}ms`;
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      // Small stagger delay (0–240ms)
+      const delay = Math.min(lazyIndex * 80, 240);
+      el.style.transitionDelay = `${delay}ms`;
+      lazyIndex++;
 
-        el.classList.add("is-visible");
-        lazyObserver.unobserve(el);
-      }
-    }
+      el.classList.add("is-visible");
+      lazyObserver.unobserve(el);
+    });
   },
   {
-    threshold: 0.08,
+    threshold: 0.12,
     rootMargin: "120px 0px"
   }
 );
