@@ -62,12 +62,29 @@
 .dr1013speciality .speciality-card img {
 	height: 60px;
 	width: 60px;
-	/* color: #237A9B; */
-	filter: invert(42%) sepia(55%) saturate(6266%) hue-rotate(172deg) brightness(90%) contrast(75%);	transition: color 0.3s ease;
+	color: #237A9B;
+	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
 }
 
 .dr1013speciality .speciality-card:hover img {
-	filter: invert(68%) sepia(62%) saturate(498%) hue-rotate(353deg) brightness(101%) contrast(98%);
+  color: #fcb83a;
+}
+
+.dr1013speciality .speciality-svg {
+  width: 60px;
+  height: 60px;
+  color: #237A9B;
+  margin-bottom: 25px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dr1013speciality .speciality-card:hover .speciality-svg {
+  color: #fcb83a;
+  transform: translateY(-3px);
 }
 
 .dr1013speciality .speciality-card h3 {
